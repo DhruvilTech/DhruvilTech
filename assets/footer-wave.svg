@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 80" width="800" height="80" role="img" aria-label="Animated footer wave">
+  <defs>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="80" fill="#070b14"/>
+
+  <!-- Wave 1 -->
+  <path fill="url(#waveGrad)">
+    <animate attributeName="d" dur="4s" repeatCount="indefinite"
+      values="M0,40 C200,10 400,70 600,40 C700,25 750,50 800,40 L800,80 L0,80 Z;
+              M0,40 C200,70 400,10 600,40 C700,55 750,25 800,40 L800,80 L0,80 Z;
+              M0,40 C200,10 400,70 600,40 C700,25 750,50 800,40 L800,80 L0,80 Z"/>
+  </path>
+
+  <!-- Wave 2 -->
+  <path fill="url(#waveGrad2)">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+      values="M0,55 C150,35 350,75 550,50 C650,38 730,62 800,50 L800,80 L0,80 Z;
+              M0,55 C150,75 350,35 550,60 C650,72 730,45 800,55 L800,80 L0,80 Z;
+              M0,55 C150,35 350,75 550,50 C650,38 730,62 800,50 L800,80 L0,80 Z"/>
+  </path>
+
+  <!-- Footer text -->
+  <text x="400" y="30" text-anchor="middle" fill="#3a5070" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="9" letter-spacing="1.5">Made with ☕ + code by DhruvilTech · Gujarat, India</text>
+</svg>

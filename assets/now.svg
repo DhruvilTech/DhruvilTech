@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160" width="800" height="160" role="img" aria-label="Latest GitHub activity from public events">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b14"/>
+      <stop offset="100%" stop-color="#0d1424"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="160" fill="url(#bg)" rx="12" stroke="#1a2340" stroke-width="1"/>
+  <rect x="0" y="0" width="800" height="3" rx="2" fill="url(#headerGrad)"/>
+  <text x="24" y="28" fill="#22d3ee" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="11" letter-spacing="2" filter="url(#glow)">LATEST GITHUB ACTIVITY</text>
+  <circle cx="210" cy="24" r="4" fill="#34d399">
+    <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="770" y="28" text-anchor="end" fill="#3a5070" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="8.5">updated: 2026-10-12 17:35 UTC</text>
+  <text x="24" y="54" fill="#e6edf3" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="9.5">▸ Pushed 1 commit to Prompt-Run-2026: &quot;code updates&quot;</text>
+  <text x="24" y="73" fill="#e6edf3" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="9.5">▸ Pushed 1 commit to DhruvPathak767/HarvestWindow: &quot;code updates&quot;</text>
+  <text x="24" y="92" fill="#e6edf3" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="9.5">▸ Pushed 1 commit to GandhiSmit06/InsureMate: &quot;code updates&quot;</text>
+  <text x="24" y="111" fill="#e6edf3" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="9.5">▸ Active contribution in DhruvPathak767/HarvestWindow</text>
+  <text x="24" y="130" fill="#e6edf3" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="9.5">▸ Created branch in GandhiSmit06/InsureMate</text>
+  <text x="24" y="152" fill="#3a5070" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="8">auto-generated from GitHub Events API · refreshed every 6h</text>
+</svg>

@@ -1,0 +1,20 @@
+{
+  "name": "dhruviltech-profile",
+  "version": "1.0.0",
+  "description": "DhruvilTech GitHub Profile — Asset generation scripts",
+  "main": "scripts/generate-assets.js",
+  "private": true,
+  "scripts": {
+    "generate": "node scripts/generate-assets.js",
+    "stipple": "python scripts/stipple-portrait.py",
+    "lint": "echo 'No linter configured'"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [],
+  "author": "DhruvilTech",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
