@@ -557,6 +557,15 @@ function generateBuilderPass(userData, snapshot) {
   <clipPath id="cardClip">
     <rect x="30" y="74" width="240" height="476" rx="18"/>
   </clipPath>
+
+  <!-- Holographic Foil Sheen Gradient -->
+  <linearGradient id="idcFoil" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+    <stop offset=".4" stop-color="#ffffff" stop-opacity=".08"/>
+    <stop offset=".5" stop-color="#ffffff" stop-opacity=".36"/>
+    <stop offset=".6" stop-color="#ffffff" stop-opacity=".08"/>
+    <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient>
 </defs>
 
 <!-- Main Container Background -->
@@ -681,6 +690,13 @@ function generateBuilderPass(userData, snapshot) {
       <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
     </circle>
     <text x="154" y="505.5" text-anchor="middle" font-size="8.5" font-weight="700" fill="#34d399" letter-spacing="1">OPEN TO OPPORTUNITIES</text>
+
+    <!-- LIGHTING ANIMATION: SWEEPS FROM CORNER TOP TO END -->
+    <g clip-path="url(#cardClip)" pointer-events="none">
+      <rect x="-180" y="40" width="110" height="550" fill="url(#idcFoil)" transform="skewX(-25)">
+        <animate attributeName="x" values="-180;500;500;500" keyTimes="0;.35;.85;1" dur="5s" begin="0s" repeatCount="indefinite"/>
+      </rect>
+    </g>
   </g>
 </g>
 
