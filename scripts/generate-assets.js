@@ -717,41 +717,45 @@ function generateBuilderPass(userData, snapshot) {
   <text x="24" y="82" font-size="9" fill="#94a3b8">production systems shipped</text>
 </g>
 
-<!-- ─── MOST-STARRED / PUBLIC REPOSITORIES BAR CHART ─────────────────── -->
+<!-- ─── FEATURED PRODUCTION PLATFORMS / DOMAINS ──────────────────────── -->
 <g transform="translate(320, 246)">
-  <text x="0" y="0" font-size="10.5" font-weight="700" fill="#64748b" letter-spacing="1.5">MOST-STARRED / PUBLIC REPOSITORIES</text>
-  <text x="320" y="0" font-size="12" fill="#fbbf24">★</text>
+  <text x="0" y="0" font-size="10.5" font-weight="700" fill="#64748b" letter-spacing="1.5">FEATURED PRODUCTION PLATFORMS / DOMAINS</text>
+  <text x="365" y="0" font-size="10" fill="#22d3ee">✦</text>
 
   <g transform="translate(0, 16)">
     <text x="0" y="11" font-size="11" font-weight="700" fill="#f8fafc">InternX-AI</text>
     <text x="140" y="11" font-size="9.5" fill="#64748b">— Virtual Internship Simulator · Groq LLM</text>
-    <rect x="0" y="17" width="760" height="8" rx="4" fill="#111827"/>
-    <rect x="0" y="17" width="620" height="8" rx="4" fill="url(#barGradCyan)"/>
-    <text x="775" y="25" font-size="10" font-weight="700" fill="#22d3ee">★ 4</text>
+    <rect x="0" y="18" width="704" height="6" rx="3" fill="#111827"/>
+    <rect x="0" y="18" width="680" height="6" rx="3" fill="url(#barGradCyan)"/>
+    <rect x="718" y="9" width="100" height="18" rx="5" fill="#0b1222" stroke="#22d3ee" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="768" y="21.5" text-anchor="middle" font-size="8.5" font-weight="700" fill="#22d3ee" letter-spacing="0.8">AI PLATFORM</text>
   </g>
 
   <g transform="translate(0, 52)">
     <text x="0" y="11" font-size="11" font-weight="700" fill="#f8fafc">CodeLens</text>
     <text x="140" y="11" font-size="9.5" fill="#64748b">— Intelligent Code Review Platform · Gemini API</text>
-    <rect x="0" y="17" width="760" height="8" rx="4" fill="#111827"/>
-    <rect x="0" y="17" width="460" height="8" rx="4" fill="url(#barGradViolet)"/>
-    <text x="775" y="25" font-size="10" font-weight="700" fill="#a78bfa">★ 3</text>
+    <rect x="0" y="18" width="704" height="6" rx="3" fill="#111827"/>
+    <rect x="0" y="18" width="630" height="6" rx="3" fill="url(#barGradViolet)"/>
+    <rect x="718" y="9" width="100" height="18" rx="5" fill="#0b1222" stroke="#a78bfa" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="768" y="21.5" text-anchor="middle" font-size="8.5" font-weight="700" fill="#a78bfa" letter-spacing="0.8">DEV TOOLS</text>
   </g>
 
   <g transform="translate(0, 88)">
     <text x="0" y="11" font-size="11" font-weight="700" fill="#f8fafc">KrushiMitraAI</text>
     <text x="140" y="11" font-size="9.5" fill="#64748b">— Smart Farming Advisory · YOLOv8 &amp; FastAPI</text>
-    <rect x="0" y="17" width="760" height="8" rx="4" fill="#111827"/>
-    <rect x="0" y="17" width="380" height="8" rx="4" fill="url(#barGradGreen)"/>
-    <text x="775" y="25" font-size="10" font-weight="700" fill="#34d399">★ 3</text>
+    <rect x="0" y="18" width="704" height="6" rx="3" fill="#111827"/>
+    <rect x="0" y="18" width="580" height="6" rx="3" fill="url(#barGradGreen)"/>
+    <rect x="718" y="9" width="100" height="18" rx="5" fill="#0b1222" stroke="#34d399" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="768" y="21.5" text-anchor="middle" font-size="8.5" font-weight="700" fill="#34d399" letter-spacing="0.8">AGRI-TECH ML</text>
   </g>
 
   <g transform="translate(0, 124)">
-    <text x="0" y="11" font-size="11" font-weight="700" fill="#f8fafc">DhruvilTech</text>
-    <text x="140" y="11" font-size="9.5" fill="#64748b">— Interactive Profile &amp; Realtime Automation</text>
-    <rect x="0" y="17" width="760" height="8" rx="4" fill="#111827"/>
-    <rect x="0" y="17" width="280" height="8" rx="4" fill="url(#barGradCoral)"/>
-    <text x="775" y="25" font-size="10" font-weight="700" fill="#ff3b5c">★ 2</text>
+    <text x="0" y="11" font-size="11" font-weight="700" fill="#f8fafc">DocShield-AI</text>
+    <text x="140" y="11" font-size="9.5" fill="#64748b">— KYC Biometrics &amp; Fraud Detection · PyTorch</text>
+    <rect x="0" y="18" width="704" height="6" rx="3" fill="#111827"/>
+    <rect x="0" y="18" width="520" height="6" rx="3" fill="url(#barGradCoral)"/>
+    <rect x="718" y="9" width="100" height="18" rx="5" fill="#0b1222" stroke="#ff3b5c" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="768" y="21.5" text-anchor="middle" font-size="8.5" font-weight="700" fill="#ff3b5c" letter-spacing="0.8">SECURITY AI</text>
   </g>
 </g>
 
