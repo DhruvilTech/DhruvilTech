@@ -385,13 +385,13 @@
 
 <br/>
 
-<!-- Tech radar + commit heat -->
+<!-- Fully Animated Skill Matrix & Arsenal -->
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/tech-radar.svg">
-  <img src="assets/tech-radar.svg"
-       alt="Tech radar: Strong (React, Node, Python, Git) / Learning (FastAPI, Docker, TypeScript) / Exploring (Kubernetes, Rust)"
+  <source media="(prefers-color-scheme: light)" srcset="assets/skills.svg">
+  <img src="assets/skills.svg"
+       alt="Dhruvil Dattani - Fully Animated Technical Arsenal & Skills Matrix"
        width="100%"/>
 </picture>
 

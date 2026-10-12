@@ -1,0 +1,373 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" role="img" aria-label="Dhruvil Dattani - Core Skills &amp; Tech Arsenal">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="skBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060a12"/>
+      <stop offset="50%" stop-color="#09101f"/>
+      <stop offset="100%" stop-color="#050810"/>
+    </linearGradient>
+
+    <!-- Border Gradients -->
+    <linearGradient id="brdCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="brdViolet" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="brdEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="brdCoral" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff3b5c" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Energy Bar Gradients -->
+    <linearGradient id="barCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="barViolet" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="barEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="barCoral" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e11d48"/>
+      <stop offset="100%" stop-color="#ff3b5c"/>
+    </linearGradient>
+
+    <!-- Holographic Diagonal Sheen Gradient -->
+    <linearGradient id="sheenGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset=".4" stop-color="#ffffff" stop-opacity=".04"/>
+      <stop offset=".5" stop-color="#ffffff" stop-opacity=".22"/>
+      <stop offset=".6" stop-color="#ffffff" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowViolet" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <clipPath id="mainClip">
+      <rect width="880" height="440" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800;900&amp;display=swap');
+    text {
+      font-family: 'JetBrains Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Consolas, monospace;
+    }
+    .pill {
+      transition: all 0.2s ease;
+    }
+  </style>
+
+  <!-- Container Base with Rounded Border -->
+  <rect width="880" height="440" rx="16" fill="url(#skBg)" stroke="#1e293b" stroke-width="1.2"/>
+
+  <!-- Cyber Background Grid -->
+  <g stroke="rgba(255,255,255,0.025)" stroke-width="1">
+    <line x1="0" y1="60" x2="880" y2="60"/>
+    <line x1="0" y1="150" x2="880" y2="150"/>
+    <line x1="0" y1="240" x2="880" y2="240"/>
+    <line x1="0" y1="330" x2="880" y2="330"/>
+    <line x1="0" y1="410" x2="880" y2="410"/>
+    <line x1="220" y1="0" x2="220" y2="440"/>
+    <line x1="440" y1="0" x2="440" y2="440"/>
+    <line x1="660" y1="0" x2="660" y2="440"/>
+  </g>
+
+  <!-- Animated Laser Scanline Beam -->
+  <line x1="0" y1="0" x2="880" y2="0" stroke="rgba(34, 211, 238, 0.25)" stroke-width="2">
+    <animate attributeName="y1" values="60;410;60" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="60;410;60" dur="8s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <!-- HEADER PANEL                                                           -->
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <g transform="translate(24, 20)">
+    <text x="0" y="14" font-size="10" font-weight="700" fill="#22d3ee" letter-spacing="2.5">05 // SKILL MATRIX</text>
+    <text x="0" y="36" font-size="20" font-weight="900" fill="#f8fafc" letter-spacing="1">
+      TECHNICAL ARSENAL <tspan fill="#22d3ee" filter="url(#glowCyan)">&amp; CAPABILITIES</tspan>
+    </text>
+
+    <!-- Right Live Telemetry Badge -->
+    <g transform="translate(640, 6)">
+      <rect width="190" height="26" rx="13" fill="#0b1329" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="16" cy="13" r="4" fill="#34d399">
+        <animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="30" y="17" font-size="9" font-weight="700" fill="#34d399" letter-spacing="1.2">SYSTEM MATRIX ACTIVE</text>
+    </g>
+  </g>
+
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <!-- CARD 1: ARTIFICIAL INTELLIGENCE & MACHINE LEARNING                     -->
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <g transform="translate(24, 76)" filter="url(#cardShadow)">
+    <rect width="406" height="154" rx="12" fill="#0a101d" stroke="url(#brdCyan)" stroke-width="1.2"/>
+    <rect width="406" height="3" rx="1.5" fill="url(#barCyan)"/>
+
+    <!-- Category Header -->
+    <text x="18" y="24" font-size="11" font-weight="800" fill="#22d3ee" letter-spacing="1.2">🧠 AI &amp; MACHINE LEARNING</text>
+    <rect x="304" y="12" width="86" height="18" rx="9" fill="#082f49" stroke="#0284c7" stroke-width="0.8"/>
+    <text x="347" y="24.5" text-anchor="middle" font-size="7.5" font-weight="700" fill="#38bdf8">SPECIALIZED</text>
+
+    <!-- Energy Level Gauge -->
+    <g transform="translate(18, 38)">
+      <text x="0" y="8" font-size="8" font-weight="600" fill="#64748b" letter-spacing="0.5">MASTERY LEVEL</text>
+      <text x="370" y="8" text-anchor="end" font-size="8.5" font-weight="800" fill="#22d3ee">94%</text>
+      <rect x="0" y="13" width="370" height="4" rx="2" fill="#1e293b"/>
+      <rect x="0" y="13" width="348" height="4" rx="2" fill="url(#barCyan)">
+        <animate attributeName="opacity" values="0.85;1;0.85" dur="2s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- Skills Badges / Chips -->
+    <!-- Row 1 -->
+    <g transform="translate(18, 70)">
+      <rect class="pill" width="84" height="24" rx="6" fill="#071526" stroke="#0e7490" stroke-width="1"/>
+      <text x="42" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#e0f2fe">PyTorch</text>
+
+      <rect class="pill" x="92" width="102" height="24" rx="6" fill="#071526" stroke="#0e7490" stroke-width="1"/>
+      <text x="143" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#e0f2fe">TensorFlow</text>
+
+      <rect class="pill" x="202" width="86" height="24" rx="6" fill="#071526" stroke="#0e7490" stroke-width="1"/>
+      <text x="245" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#e0f2fe">YOLOv8</text>
+
+      <rect class="pill" x="296" width="74" height="24" rx="6" fill="#071526" stroke="#0e7490" stroke-width="1"/>
+      <text x="333" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#e0f2fe">OpenCV</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(18, 102)">
+      <rect class="pill" width="94" height="24" rx="6" fill="#071526" stroke="#0e7490" stroke-width="1"/>
+      <text x="47" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#e0f2fe">Groq LLM</text>
+
+      <rect class="pill" x="102" width="104" height="24" rx="6" fill="#071526" stroke="#0e7490" stroke-width="1"/>
+      <text x="154" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#e0f2fe">Gemini API</text>
+
+      <rect class="pill" x="214" width="76" height="24" rx="6" fill="#071526" stroke="#0e7490" stroke-width="1"/>
+      <text x="252" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#e0f2fe">OCR AI</text>
+
+      <rect class="pill" x="298" width="72" height="24" rx="6" fill="#071526" stroke="#0e7490" stroke-width="1"/>
+      <text x="334" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#e0f2fe">LangChain</text>
+    </g>
+
+    <text x="18" y="142" font-size="8" fill="#64748b">Biometrics · Tamper Detection · Real-time Inference · AI Agents</text>
+  </g>
+
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <!-- CARD 2: BACKEND & DISTRIBUTED SYSTEMS                                  -->
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <g transform="translate(450, 76)" filter="url(#cardShadow)">
+    <rect width="406" height="154" rx="12" fill="#0a101d" stroke="url(#brdViolet)" stroke-width="1.2"/>
+    <rect width="406" height="3" rx="1.5" fill="url(#barViolet)"/>
+
+    <!-- Category Header -->
+    <text x="18" y="24" font-size="11" font-weight="800" fill="#a78bfa" letter-spacing="1.2">⚡ BACKEND &amp; HIGH CONCURRENCY</text>
+    <rect x="306" y="12" width="84" height="18" rx="9" fill="#2e1065" stroke="#7c3aed" stroke-width="0.8"/>
+    <text x="348" y="24.5" text-anchor="middle" font-size="7.5" font-weight="700" fill="#c084fc">PRODUCTION</text>
+
+    <!-- Energy Level Gauge -->
+    <g transform="translate(18, 38)">
+      <text x="0" y="8" font-size="8" font-weight="600" fill="#64748b" letter-spacing="0.5">MASTERY LEVEL</text>
+      <text x="370" y="8" text-anchor="end" font-size="8.5" font-weight="800" fill="#a78bfa">91%</text>
+      <rect x="0" y="13" width="370" height="4" rx="2" fill="#1e293b"/>
+      <rect x="0" y="13" width="336" height="4" rx="2" fill="url(#barViolet)">
+        <animate attributeName="opacity" values="0.85;1;0.85" dur="2.2s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- Skills Badges / Chips -->
+    <!-- Row 1 -->
+    <g transform="translate(18, 70)">
+      <rect class="pill" width="80" height="24" rx="6" fill="#140f2b" stroke="#6d28d9" stroke-width="1"/>
+      <text x="40" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#f3e8ff">Node.js</text>
+
+      <rect class="pill" x="88" width="76" height="24" rx="6" fill="#140f2b" stroke="#6d28d9" stroke-width="1"/>
+      <text x="126" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#f3e8ff">FastAPI</text>
+
+      <rect class="pill" x="172" width="72" height="24" rx="6" fill="#140f2b" stroke="#6d28d9" stroke-width="1"/>
+      <text x="208" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#f3e8ff">Python</text>
+
+      <rect class="pill" x="252" width="78" height="24" rx="6" fill="#140f2b" stroke="#6d28d9" stroke-width="1"/>
+      <text x="291" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#f3e8ff">Express</text>
+
+      <rect class="pill" x="338" width="34" height="24" rx="6" fill="#140f2b" stroke="#6d28d9" stroke-width="1"/>
+      <text x="355" y="15.5" text-anchor="middle" font-size="8.5" font-weight="700" fill="#f3e8ff">C++</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(18, 102)">
+      <rect class="pill" width="102" height="24" rx="6" fill="#140f2b" stroke="#6d28d9" stroke-width="1"/>
+      <text x="51" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#f3e8ff">TypeScript</text>
+
+      <rect class="pill" x="110" width="88" height="24" rx="6" fill="#140f2b" stroke="#6d28d9" stroke-width="1"/>
+      <text x="154" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#f3e8ff">REST APIs</text>
+
+      <rect class="pill" x="206" width="94" height="24" rx="6" fill="#140f2b" stroke="#6d28d9" stroke-width="1"/>
+      <text x="253" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#f3e8ff">WebSockets</text>
+
+      <rect class="pill" x="308" width="62" height="24" rx="6" fill="#140f2b" stroke="#6d28d9" stroke-width="1"/>
+      <text x="339" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#f3e8ff">JWT / Auth</text>
+    </g>
+
+    <text x="18" y="142" font-size="8" fill="#64748b">Async Microservices · Secure Auth · Event Queues · High Throughput</text>
+  </g>
+
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <!-- CARD 3: FRONTEND ARCHITECTURE & DESIGN SYSTEMS                         -->
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <g transform="translate(24, 246)" filter="url(#cardShadow)">
+    <rect width="406" height="154" rx="12" fill="#0a101d" stroke="url(#brdEmerald)" stroke-width="1.2"/>
+    <rect width="406" height="3" rx="1.5" fill="url(#barEmerald)"/>
+
+    <!-- Category Header -->
+    <text x="18" y="24" font-size="11" font-weight="800" fill="#34d399" letter-spacing="1.2">💻 FRONTEND &amp; MOTION UI</text>
+    <rect x="304" y="12" width="86" height="18" rx="9" fill="#064e3b" stroke="#059669" stroke-width="0.8"/>
+    <text x="347" y="24.5" text-anchor="middle" font-size="7.5" font-weight="700" fill="#6ee7b7">RESPONSIVE</text>
+
+    <!-- Energy Level Gauge -->
+    <g transform="translate(18, 38)">
+      <text x="0" y="8" font-size="8" font-weight="600" fill="#64748b" letter-spacing="0.5">MASTERY LEVEL</text>
+      <text x="370" y="8" text-anchor="end" font-size="8.5" font-weight="800" fill="#34d399">89%</text>
+      <rect x="0" y="13" width="370" height="4" rx="2" fill="#1e293b"/>
+      <rect x="0" y="13" width="329" height="4" rx="2" fill="url(#barEmerald)">
+        <animate attributeName="opacity" values="0.85;1;0.85" dur="1.9s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- Skills Badges / Chips -->
+    <!-- Row 1 -->
+    <g transform="translate(18, 70)">
+      <rect class="pill" width="82" height="24" rx="6" fill="#081c15" stroke="#047857" stroke-width="1"/>
+      <text x="41" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#ecfdf5">React.js</text>
+
+      <rect class="pill" x="90" width="76" height="24" rx="6" fill="#081c15" stroke="#047857" stroke-width="1"/>
+      <text x="128" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#ecfdf5">Next.js</text>
+
+      <rect class="pill" x="174" width="102" height="24" rx="6" fill="#081c15" stroke="#047857" stroke-width="1"/>
+      <text x="225" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#ecfdf5">Tailwind CSS</text>
+
+      <rect class="pill" x="284" width="86" height="24" rx="6" fill="#081c15" stroke="#047857" stroke-width="1"/>
+      <text x="327" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#ecfdf5">JavaScript</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(18, 102)">
+      <rect class="pill" width="80" height="24" rx="6" fill="#081c15" stroke="#047857" stroke-width="1"/>
+      <text x="40" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#ecfdf5">HTML5/CSS3</text>
+
+      <rect class="pill" x="88" width="94" height="24" rx="6" fill="#081c15" stroke="#047857" stroke-width="1"/>
+      <text x="135" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#ecfdf5">Motion SVG</text>
+
+      <rect class="pill" x="190" width="86" height="24" rx="6" fill="#081c15" stroke="#047857" stroke-width="1"/>
+      <text x="233" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#ecfdf5">Redux/Zustand</text>
+
+      <rect class="pill" x="284" width="86" height="24" rx="6" fill="#081c15" stroke="#047857" stroke-width="1"/>
+      <text x="327" y="15.5" text-anchor="middle" font-size="8.5" font-weight="700" fill="#ecfdf5">Glassmorphism</text>
+    </g>
+
+    <text x="18" y="142" font-size="8" fill="#64748b">Modern UI/UX · Pixel-Perfect · Micro-Animations · Dark Mode First</text>
+  </g>
+
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <!-- CARD 4: DATABASE, CLOUD & DEVOPS INFRASTRUCTURE                        -->
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <g transform="translate(450, 246)" filter="url(#cardShadow)">
+    <rect width="406" height="154" rx="12" fill="#0a101d" stroke="url(#brdCoral)" stroke-width="1.2"/>
+    <rect width="406" height="3" rx="1.5" fill="url(#barCoral)"/>
+
+    <!-- Category Header -->
+    <text x="18" y="24" font-size="11" font-weight="800" fill="#ff3b5c" letter-spacing="1.2">🗄️ DATA, CLOUD &amp; DEVOPS</text>
+    <rect x="306" y="12" width="84" height="18" rx="9" fill="#4c0519" stroke="#be123c" stroke-width="0.8"/>
+    <text x="348" y="24.5" text-anchor="middle" font-size="7.5" font-weight="700" fill="#fda4af">DEPLOYED</text>
+
+    <!-- Energy Level Gauge -->
+    <g transform="translate(18, 38)">
+      <text x="0" y="8" font-size="8" font-weight="600" fill="#64748b" letter-spacing="0.5">MASTERY LEVEL</text>
+      <text x="370" y="8" text-anchor="end" font-size="8.5" font-weight="800" fill="#ff3b5c">87%</text>
+      <rect x="0" y="13" width="370" height="4" rx="2" fill="#1e293b"/>
+      <rect x="0" y="13" width="322" height="4" rx="2" fill="url(#barCoral)">
+        <animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- Skills Badges / Chips -->
+    <!-- Row 1 -->
+    <g transform="translate(18, 70)">
+      <rect class="pill" width="88" height="24" rx="6" fill="#1f0a10" stroke="#9f1239" stroke-width="1"/>
+      <text x="44" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#ffe4e6">MongoDB</text>
+
+      <rect class="pill" x="96" width="94" height="24" rx="6" fill="#1f0a10" stroke="#9f1239" stroke-width="1"/>
+      <text x="143" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#ffe4e6">PostgreSQL</text>
+
+      <rect class="pill" x="198" width="68" height="24" rx="6" fill="#1f0a10" stroke="#9f1239" stroke-width="1"/>
+      <text x="232" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#ffe4e6">Docker</text>
+
+      <rect class="pill" x="274" width="98" height="24" rx="6" fill="#1f0a10" stroke="#9f1239" stroke-width="1"/>
+      <text x="323" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#ffe4e6">Git / GitHub</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(18, 102)">
+      <rect class="pill" width="70" height="24" rx="6" fill="#1f0a10" stroke="#9f1239" stroke-width="1"/>
+      <text x="35" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#ffe4e6">Redis</text>
+
+      <rect class="pill" x="78" width="92" height="24" rx="6" fill="#1f0a10" stroke="#9f1239" stroke-width="1"/>
+      <text x="124" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#ffe4e6">Linux/Bash</text>
+
+      <rect class="pill" x="178" width="98" height="24" rx="6" fill="#1f0a10" stroke="#9f1239" stroke-width="1"/>
+      <text x="227" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#ffe4e6">CI/CD Actions</text>
+
+      <rect class="pill" x="284" width="88" height="24" rx="6" fill="#1f0a10" stroke="#9f1239" stroke-width="1"/>
+      <text x="328" y="15.5" text-anchor="middle" font-size="9" font-weight="700" fill="#ffe4e6">Vector DBs</text>
+    </g>
+
+    <text x="18" y="142" font-size="8" fill="#64748b">Containerization · Automated Workflows · Data Modeling · Cloud Storage</text>
+  </g>
+
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <!-- BOTTOM STATUS TELEMETRY STRIP                                          -->
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <g transform="translate(24, 412)">
+    <text x="0" y="12" font-size="8.5" font-weight="700" fill="#64748b" letter-spacing="1">
+      ENGINEERING FOCUS:
+      <tspan fill="#22d3ee">SCALABLE AI PLATFORMS</tspan> ·
+      <tspan fill="#a78bfa">HIGH-THROUGHPUT FULL-STACK</tspan> ·
+      <tspan fill="#34d399">PRODUCTION APIS</tspan>
+    </text>
+    <text x="832" y="12" text-anchor="end" font-size="8.5" font-weight="700" fill="#f8fafc" letter-spacing="1">
+      STATUS: <tspan fill="#34d399">OPEN TO ROLES 🚀</tspan>
+    </text>
+  </g>
+
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <!-- HOLOGRAPHIC LIGHTING SHEEN ANIMATION ACROSS WHOLE MATRIX               -->
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <g clip-path="url(#mainClip)" pointer-events="none">
+    <rect x="-350" y="0" width="180" height="440" fill="url(#sheenGrad)" transform="skewX(-25)">
+      <animate attributeName="x" values="-350;1250;1250;1250" keyTimes="0;.4;.85;1" dur="6s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
