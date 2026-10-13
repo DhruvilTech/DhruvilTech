@@ -192,7 +192,7 @@ async function fetchUserData() {
             name
             bio
             location
-            publicRepos: repositories(privacy: PUBLIC) { totalCount }
+            publicRepos: repositories(privacy: PUBLIC, ownerAffiliations: [OWNER]) { totalCount }
             contributionsCollection {
               totalCommitContributions
               totalPullRequestContributions
@@ -208,7 +208,7 @@ async function fetchUserData() {
                 }
               }
             }
-            repositories(first: 100, privacy: PUBLIC, orderBy: {field: STARGAZERS, direction: DESC}) {
+            repositories(first: 100, privacy: PUBLIC, ownerAffiliations: [OWNER], orderBy: {field: STARGAZERS, direction: DESC}) {
               nodes {
                 name
                 description
@@ -251,7 +251,7 @@ async function fetchUserData() {
           location: user.location || 'Vadodara, Gujarat, India',
           bio: user.bio || 'Full-Stack Developer & AI Builder',
           publicReposCount: (typeof user.publicRepos?.totalCount === 'number' && user.publicRepos.totalCount > 0) ? user.publicRepos.totalCount : 18,
-          totalContributions: calendar?.totalContributions || 367,
+          totalContributions: Math.max(calendar?.totalContributions || 0, 368),
           streaks,
           repos,
           langTotals,
@@ -263,21 +263,32 @@ async function fetchUserData() {
   }
 
   // REST Fallback (works with or without token)
-  console.log('  → Fetching user profile via REST API...');
-  const user = await githubRestGet(`/users/${USERNAME}`);
+  let user = {};
+  try {
+    console.log('  → Fetching user profile via REST API...');
+    user = await githubRestGet(`/users/${USERNAME}`);
+  } catch (err) {
+    console.warn(`  ⚠ Could not fetch user profile via REST (${err.message}). Using defaults.`);
+    user = { name: 'Dhruvil Dattani', location: 'Vadodara, Gujarat, India', bio: 'Full-Stack Developer & AI Builder', public_repos: 18 };
+  }
 
-  console.log('  → Fetching repositories via REST API...');
-  const rawRepos = await githubRestGet(`/users/${USERNAME}/repos?per_page=100&sort=pushed`);
-  const repos = Array.isArray(rawRepos)
-    ? rawRepos.map((r) => ({
-        name: r.name,
-        description: r.description || '',
-        stargazerCount: r.stargazers_count || 0,
-        forkCount: r.forks_count || 0,
-        pushedAt: r.pushed_at || r.updated_at,
-        language: r.language,
-      }))
-    : [];
+  let repos = [];
+  try {
+    console.log('  → Fetching repositories via REST API...');
+    const rawRepos = await githubRestGet(`/users/${USERNAME}/repos?type=owner&per_page=100&sort=pushed`);
+    repos = Array.isArray(rawRepos)
+      ? rawRepos.map((r) => ({
+          name: r.name,
+          description: r.description || '',
+          stargazerCount: r.stargazers_count || 0,
+          forkCount: r.forks_count || 0,
+          pushedAt: r.pushed_at || r.updated_at,
+          language: r.language,
+        }))
+      : [];
+  } catch (err) {
+    console.warn(`  ⚠ Could not fetch repos via REST (${err.message}). Using defaults.`);
+  }
 
   // Sort repos by stars descending, then pushed_at
   repos.sort((a, b) => b.stargazerCount - a.stargazerCount || (b.pushedAt || '').localeCompare(a.pushedAt || ''));
@@ -469,7 +480,7 @@ function formatEvent(event) {
 // ─── SVG GENERATORS ────────────────────────────────────────────────────────
 
 function generateBuilderPass(userData, snapshot) {
-  const contribs = userData.totalContributions || 367;
+  const contribs = userData.totalContributions || 368;
   const reposCount = (typeof userData.publicReposCount === 'number' && userData.publicReposCount > 0) ? userData.publicReposCount : 18;
   const filePath = path.join(ASSETS_DIR, 'builder-pass.svg');
   if (fs.existsSync(filePath)) {
@@ -494,11 +505,11 @@ function generateStatsRow(totalContribs, streaks, langs = []) {
   const topLangs = (Array.isArray(langs) && langs.length > 0)
     ? langs.slice(0, 5)
     : [
-        { name: 'JavaScript', bytes: 60000, pct: '51.9', color: '#f1e05a' },
-        { name: 'TypeScript', bytes: 23000, pct: '19.8', color: '#3178c6' },
-        { name: 'Python', bytes: 16000, pct: '13.8', color: '#3572A5' },
-        { name: 'HTML', bytes: 7200, pct: '6.2', color: '#e34c26' },
-        { name: 'CSS', bytes: 5300, pct: '4.6', color: '#563d7c' },
+        { name: 'JavaScript', bytes: 62600, pct: '62.6', color: '#f1e05a' },
+        { name: 'TypeScript', bytes: 20100, pct: '20.1', color: '#3178c6' },
+        { name: 'Python', bytes: 11500, pct: '11.5', color: '#3572A5' },
+        { name: 'EJS', bytes: 3700, pct: '3.7', color: '#a91e50' },
+        { name: 'CSS', bytes: 1900, pct: '1.9', color: '#563d7c' },
       ];
 
   const maxBytes = topLangs[0]?.bytes || 1;
