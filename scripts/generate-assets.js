@@ -468,18 +468,18 @@ function formatEvent(event) {
 // ─── SVG GENERATORS ────────────────────────────────────────────────────────
 
 function generateBuilderPass(userData, snapshot) {
-  const contribs = userData.totalContributions || 337;
-  const reposCount = userData.publicReposCount || 29;
+  const contribs = userData.totalContributions || 366;
+  const reposCount = userData.publicReposCount || 18;
   const filePath = path.join(ASSETS_DIR, 'builder-pass.svg');
   if (fs.existsSync(filePath)) {
     let svg = fs.readFileSync(filePath, 'utf8');
     svg = svg.replace(
-      /<text x="34" y="92" font-size="22" font-weight="900" fill="#22d3ee">\d+<\/text>/,
-      `<text x="34" y="92" font-size="22" font-weight="900" fill="#22d3ee">${contribs}</text>`
+      /(<text x="32" y="95" [^>]*fill="#22d3ee"[^>]*>)\d+(<\/text>)/,
+      `$1${contribs}$2`
     );
     svg = svg.replace(
-      /<text x="34" y="160" font-size="22" font-weight="900" fill="#a78bfa">\d+<\/text>/,
-      `<text x="34" y="160" font-size="22" font-weight="900" fill="#a78bfa">${reposCount}</text>`
+      /(<text x="32" y="169" [^>]*fill="#a78bfa"[^>]*>)\d+(<\/text>)/,
+      `$1${reposCount}$2`
     );
     return svg;
   }
