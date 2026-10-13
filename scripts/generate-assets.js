@@ -246,28 +246,15 @@ async function fetchUserData() {
           }
         }
 
-        const calendarWeeks = calendar?.weeks || [];
-        const days = [];
-        for (const w of calendarWeeks) {
-          for (const d of w.contributionDays || []) {
-            let level = 0;
-            if (d.contributionCount > 0) {
-              level = d.contributionCount >= 10 ? 4 : d.contributionCount >= 5 ? 3 : d.contributionCount >= 2 ? 2 : 1;
-            }
-            days.push({ date: d.date, level });
-          }
-        }
-
         return {
           name: user.name || 'Dhruvil Dattani',
           location: user.location || 'Vadodara, Gujarat, India',
           bio: user.bio || 'Full-Stack Developer & AI Builder',
-          publicReposCount: user.publicRepos?.totalCount || repos.length || 18,
-          totalContributions: calendar?.totalContributions || 368,
+          publicReposCount: (typeof user.publicRepos?.totalCount === 'number' && user.publicRepos.totalCount > 0) ? user.publicRepos.totalCount : 18,
+          totalContributions: calendar?.totalContributions || 367,
           streaks,
           repos,
           langTotals,
-          days,
         };
       }
     } catch (err) {
@@ -374,12 +361,11 @@ async function fetchUserData() {
     name: user.name || 'Dhruvil Dattani',
     location: user.location || 'Vadodara, Gujarat, India',
     bio: user.bio || 'Full-Stack Developer & AI Builder',
-    publicReposCount: user.public_repos || repos.length,
+    publicReposCount: (typeof user.public_repos === 'number' && user.public_repos > 0) ? user.public_repos : 18,
     totalContributions,
     streaks,
     repos,
     langTotals,
-    days,
   };
 }
 
@@ -483,8 +469,8 @@ function formatEvent(event) {
 // ─── SVG GENERATORS ────────────────────────────────────────────────────────
 
 function generateBuilderPass(userData, snapshot) {
-  const contribs = userData.totalContributions || 368;
-  const reposCount = userData.publicReposCount || 18;
+  const contribs = userData.totalContributions || 367;
+  const reposCount = (typeof userData.publicReposCount === 'number' && userData.publicReposCount > 0) ? userData.publicReposCount : 18;
   const filePath = path.join(ASSETS_DIR, 'builder-pass.svg');
   if (fs.existsSync(filePath)) {
     let svg = fs.readFileSync(filePath, 'utf8');
@@ -499,33 +485,6 @@ function generateBuilderPass(userData, snapshot) {
     return svg;
   }
   return '';
-}
-
-function updateSnakeGridCells(days = []) {
-  const filePath = path.join(ASSETS_DIR, 'github-snake-dark.svg');
-  if (!fs.existsSync(filePath) || !Array.isArray(days) || days.length === 0) return;
-  let svg = fs.readFileSync(filePath, 'utf8');
-
-  // Cyan & violet contribution theme palette: Level 0 (empty) through Level 4 (highest)
-  const SNAKE_LEVEL_COLORS = ['#161b22', '#3b0764', '#6b21a8', '#8b5cf6', '#c084fc'];
-  let cellIndex = 0;
-  const offset = Math.max(0, 371 - days.length);
-
-  svg = svg.replace(
-    /(<rect\s+x="[0-9\.]+"\s+y="[0-9\.]+"\s+width="10\.5"\s+height="10\.5"\s+rx="2\.5"\s+fill=")[^"]+(")/g,
-    (match, p1, p2) => {
-      let level = 0;
-      if (cellIndex >= offset) {
-        const day = days[cellIndex - offset];
-        level = day ? day.level : 0;
-      }
-      cellIndex++;
-      const color = SNAKE_LEVEL_COLORS[level] || SNAKE_LEVEL_COLORS[0];
-      return `${p1}${color}${p2}`;
-    }
-  );
-
-  safeWrite(filePath, svg);
 }
 
 function generateStatsRow(totalContribs, streaks, langs = []) {
@@ -786,8 +745,6 @@ async function main() {
       path.join(ASSETS_DIR, 'stats-row.svg'),
       generateStatsRow(userData.totalContributions, userData.streaks, langs)
     );
-
-    updateSnakeGridCells(userData.days || []);
 
 
 
