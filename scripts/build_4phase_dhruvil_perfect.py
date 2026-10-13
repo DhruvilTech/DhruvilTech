@@ -233,13 +233,11 @@ def build_perfect_4phase_terminal():
 <rect x="2" y="2" width="1196" height="566" rx="21" fill="url(#stack-dots)" stroke="none"/>
 <rect x="1" y="1" width="1198" height="3" rx="1.5" fill="url(#barGradCyan)"/>
 <g clip-path="url(#winClip)">
-  <!-- LEFT: 5-PHASE HALFTONE PORTRAIT & LOGO MORPH -->
+  <!-- LEFT: HALFTONE PORTRAIT & LOGO MORPH -->
   <rect x="24" y="20" width="418" height="528" rx="16" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
   <rect x="24" y="20" width="418" height="3" rx="1.5" fill="url(#barGradCyan)"/>
   <rect x="38" y="32" width="116" height="24" rx="6" fill="#070b16" stroke="#22d3ee" stroke-opacity=".4" stroke-width="1"/>
   <text x="96" y="48" text-anchor="middle" font-size="11" font-weight="900" letter-spacing="2" fill="#22d3ee">VISUAL.MAP</text>
-  <circle cx="420" cy="44" r="4" fill="#10b981"><animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/></circle>
-  <text x="408" y="48" text-anchor="end" font-size="10.5" font-weight="700" letter-spacing="1" fill="#10b981">LIVE 5-PHASE</text>
 
   <rect x="34" y="66" width="398" height="470" rx="10" fill="#070b16" stroke="#1d2d48" stroke-width="1"/>
   <rect x="34" y="66" width="398" height="470" rx="10" fill="url(#stack-dots)" opacity="0.08"/>
@@ -252,93 +250,88 @@ def build_perfect_4phase_terminal():
   <path d="M 48 522 L 38 522 L 38 512" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.85"/>
   <path d="M 418 522 L 428 522 L 428 512" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.85"/>
 
-  <!-- RIGHT PANEL 1: SYSTEM.INFO -->
+  <!-- UNIFIED RIGHT PANEL: ENGINEER IDENTITY & DIRECT NETWORKS -->
   <g transform="translate(460, 20)">
-    <rect width="716" height="216" rx="16" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
+    <rect width="716" height="528" rx="16" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
     <rect width="716" height="3" rx="1.5" fill="url(#barGradCyan)"/>
-    <text x="20" y="24" font-size="12" font-weight="900" letter-spacing="1.5" fill="#22d3ee" filter="url(#txtGlow)">01 · SYSTEM.INFO</text>
-    <rect x="160" y="11" width="224" height="20" rx="4" fill="#4c1d95"/>
-    <text x="272" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="#e9d5ff">dhruvildattani9@gmail.com</text>
-    <circle cx="690" cy="21" r="4" fill="#ef4444"><animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite"/></circle>
-    <text x="700" y="25" font-size="11" font-weight="700" fill="#ef4444">LIVE</text>
-    <line x1="20" y1="38" x2="696" y2="38" stroke="rgba(255,255,255,0.08)"/>
+    
+    <!-- Top Header -->
+    <text x="24" y="28" font-size="13" font-weight="900" letter-spacing="1.5" fill="#22d3ee" filter="url(#txtGlow)">01 · ENGINEER PROFILE &amp; VERIFIED NETWORKS</text>
+    <rect x="520" y="14" width="176" height="24" rx="6" fill="#070b16" stroke="#10b981" stroke-opacity=".4" stroke-width="1"/>
+    <circle cx="536" cy="26" r="4" fill="#10b981"><animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/></circle>
+    <text x="548" y="30" font-size="11" font-weight="800" letter-spacing="1" fill="#34d399">AVAILABLE FOR HIRE</text>
+    
+    <line x1="24" y1="46" x2="692" y2="46" stroke="rgba(255,255,255,0.08)"/>
 
+    <!-- Section 1: Identity & MSU Baroda Details (Bigger font: 15-18px) -->
     <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.3s" fill="freeze"/>
-      <text x="20" y="60" font-size="12.5" font-weight="700" fill="#67e8f9">Subject</text>
-      <text x="140" y="60" font-size="12.5" font-weight="800" fill="#f8fafc">Dhruvil Dattani</text>
+      <text x="24" y="78" font-size="15" font-weight="700" fill="#67e8f9">Subject</text>
+      <text x="180" y="78" font-size="18" font-weight="900" fill="#ffffff">Dhruvil Dattani</text>
     </g>
+
     <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.45s" fill="freeze"/>
-      <text x="20" y="86" font-size="12.5" font-weight="700" fill="#67e8f9">Role ...</text>
-      <text x="140" y="86" font-size="12.5" font-weight="800" fill="#f8fafc">Full Stack &amp; AI Systems Engineer</text>
+      <text x="24" y="116" font-size="15" font-weight="700" fill="#67e8f9">Role</text>
+      <text x="180" y="116" font-size="16" font-weight="800" fill="#f8fafc">Full Stack &amp; AI Systems Engineer</text>
     </g>
+
     <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.60s" fill="freeze"/>
-      <text x="20" y="112" font-size="12.5" font-weight="700" fill="#67e8f9">Origin .</text>
-      <text x="140" y="112" font-size="12.5" fill="#94a3b8">Gujarat, India</text>
+      <text x="24" y="154" font-size="15" font-weight="700" fill="#67e8f9">Education</text>
+      <text x="180" y="154" font-size="15.5" font-weight="700" fill="#e2e8f0">B.E. Computer Science &amp; Engineering</text>
     </g>
+
     <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.75s" fill="freeze"/>
-      <text x="20" y="138" font-size="12.5" font-weight="700" fill="#67e8f9">Education</text>
-      <text x="140" y="138" font-size="12.5" fill="#94a3b8">B.Tech Computer Science &amp; Engineering</text>
+      <text x="24" y="192" font-size="15" font-weight="700" fill="#67e8f9">University</text>
+      <text x="180" y="192" font-size="15.5" font-weight="700" fill="#a78bfa">MSU Baroda (Currently in 3rd Year)</text>
     </g>
+
     <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.90s" fill="freeze"/>
-      <text x="20" y="164" font-size="12.5" font-weight="700" fill="#67e8f9">Status .</text>
-      <text x="140" y="164" font-size="12.5" font-weight="800" fill="#34d399">Open for Opportunities &amp; AI Projects</text>
+      <text x="24" y="230" font-size="15" font-weight="700" fill="#67e8f9">Location</text>
+      <text x="180" y="230" font-size="15" font-weight="700" fill="#94a3b8">Vadodara, Gujarat, India (Remote OK)</text>
     </g>
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.05s" fill="freeze"/>
-      <text x="20" y="190" font-size="12.5" font-weight="700" fill="#67e8f9">ToolChain</text>
-      <text x="140" y="190" font-size="12.5" fill="#cbd5e1">Next.js &#183; React &#183; Node.js &#183; Python &#183; TypeScript</text>
-    </g>
-  </g>
 
-  <!-- RIGHT PANEL 2: CORE ARCHITECTURE & RADAR -->
-  <g transform="translate(460, 250)">
-    <rect width="716" height="152" rx="16" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
-    <rect width="716" height="3" rx="1.5" fill="url(#barGradViolet)"/>
-    <text x="20" y="24" font-size="12" font-weight="900" letter-spacing="1.5" fill="#a78bfa" filter="url(#txtGlow)">02 · CORE ARCHITECTURE &amp; RADAR</text>
-    <line x1="20" y1="36" x2="696" y2="36" stroke="rgba(255,255,255,0.08)"/>
+    <!-- Hairline Divider -->
+    <line x1="24" y1="258" x2="692" y2="258" stroke="rgba(255,255,255,0.08)"/>
 
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.20s" fill="freeze"/>
-      <text x="20" y="56" font-size="12" font-weight="700" fill="#22d3ee">Core.Languages</text>
-      <text x="160" y="56" font-size="12" fill="#e2e8f0">TypeScript &#183; Python &#183; JavaScript &#183; Go &#183; C++</text>
-    </g>
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.35s" fill="freeze"/>
-      <text x="20" y="78" font-size="12" font-weight="700" fill="#22d3ee">Core.Frontend</text>
-      <text x="160" y="78" font-size="12" fill="#cbd5e1">Next.js 14 &#183; React &#183; Tailwind CSS &#183; Redux</text>
-    </g>
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.50s" fill="freeze"/>
-      <text x="20" y="100" font-size="12" font-weight="700" fill="#22d3ee">Core.Backend</text>
-      <text x="160" y="100" font-size="12" fill="#cbd5e1">Node.js &#183; Express &#183; FastAPI &#183; Django</text>
-    </g>
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.65s" fill="freeze"/>
-      <text x="20" y="122" font-size="12" font-weight="700" fill="#22d3ee">Core.Database</text>
-      <text x="160" y="122" font-size="12" fill="#cbd5e1">PostgreSQL &#183; MongoDB &#183; Redis &#183; Supabase</text>
-    </g>
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.80s" fill="freeze"/>
-      <text x="20" y="144" font-size="12" font-weight="700" fill="#22d3ee">Core.Cloud/AI</text>
-      <text x="160" y="144" font-size="12" fill="#cbd5e1">Docker &#183; AWS &#183; LangChain &#183; OpenAI &#183; Git</text>
-    </g>
-  </g>
+    <!-- Section 2: Direct Interactive Links with Accurate URLs (Font size: 15.5px) -->
+    <text x="24" y="286" font-size="12.5" font-weight="900" letter-spacing="1.5" fill="#a78bfa" filter="url(#txtGlow)">02 · DIRECT VERIFIED NETWORKS &amp; LINKS</text>
 
-  <!-- RIGHT PANEL 3: NETWORKS & TELEMETRY -->
-  <g transform="translate(460, 416)">
-    <rect width="716" height="132" rx="16" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
-    <rect width="716" height="3" rx="1.5" fill="url(#barGradEmerald)"/>
-    <text x="20" y="23" font-size="12" font-weight="900" letter-spacing="1.5" fill="#34d399" filter="url(#txtGlow)">03 · NETWORKS &amp; TELEMETRY</text>
-    <line x1="20" y1="34" x2="696" y2="34" stroke="rgba(255,255,255,0.08)"/>
+    <!-- Portfolio Link -->
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.1s" fill="freeze"/>
+      <text x="24" y="322" font-size="15" font-weight="700" fill="#67e8f9">Portfolio</text>
+      <a href="https://dhruvildattani-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <text x="180" y="322" font-size="15.5" font-weight="700" fill="#22d3ee" style="cursor:pointer;">dhruvildattani-portfolio.vercel.app &#x2197;</text>
+      </a>
+    </g>
 
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.95s" fill="freeze"/>
-      <text x="20" y="53" font-size="12" font-weight="700" fill="#67e8f9">Grid.Mail ....</text><text x="140" y="53" font-size="12" fill="#cbd5e1">dhruvildattani9@gmail.com</text>
-      <text x="370" y="53" font-size="12" font-weight="700" fill="#67e8f9">Grid.GitHub ..</text><text x="490" y="53" font-size="12" fill="#cbd5e1">github.com/DhruvilTech</text>
+    <!-- LinkedIn Link -->
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.25s" fill="freeze"/>
+      <text x="24" y="362" font-size="15" font-weight="700" fill="#67e8f9">LinkedIn</text>
+      <a href="https://www.linkedin.com/in/dhruvil-dattani-b43599317/" target="_blank" rel="noopener noreferrer">
+        <text x="180" y="362" font-size="15.5" font-weight="700" fill="#c084fc" style="cursor:pointer;">linkedin.com/in/dhruvil-dattani-b43599317/ &#x2197;</text>
+      </a>
     </g>
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.10s" fill="freeze"/>
-      <text x="20" y="74" font-size="12" font-weight="700" fill="#67e8f9">Grid.LinkedIn</text><text x="140" y="74" font-size="12" fill="#cbd5e1">linkedin.com/in/dhruvildattani</text>
-      <text x="370" y="74" font-size="12" font-weight="700" fill="#67e8f9">Grid.Portfolio</text><text x="490" y="74" font-size="12" fill="#cbd5e1">dhruviltech.dev</text>
+
+    <!-- GitHub Link -->
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.4s" fill="freeze"/>
+      <text x="24" y="402" font-size="15" font-weight="700" fill="#67e8f9">GitHub</text>
+      <a href="https://github.com/DhruvilTech" target="_blank" rel="noopener noreferrer">
+        <text x="180" y="402" font-size="15.5" font-weight="700" fill="#f8fafc" style="cursor:pointer;">github.com/DhruvilTech &#x2197;</text>
+      </a>
     </g>
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.25s" fill="freeze"/>
-      <text x="20" y="95" font-size="12" font-weight="700" fill="#67e8f9">Grid.Status ..</text>
-      <text x="140" y="95" font-size="12" font-weight="800" fill="#34d399">&#9679; Available for hire &amp; collaborations</text>
+
+    <!-- Email Link -->
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.55s" fill="freeze"/>
+      <text x="24" y="442" font-size="15" font-weight="700" fill="#67e8f9">Direct Mail</text>
+      <a href="mailto:dhruvildattani9@gmail.com">
+        <text x="180" y="442" font-size="15.5" font-weight="700" fill="#ff354f" style="cursor:pointer;">dhruvildattani9@gmail.com &#x2197;</text>
+      </a>
     </g>
-    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.45s" fill="freeze"/>
-      <text x="20" y="117" font-size="11.5" fill="#94a3b8">&#9656; More about me &amp; projects below in README</text>
+
+    <!-- Bottom Status Card Pill -->
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.7s" fill="freeze"/>
+      <rect x="24" y="472" width="668" height="38" rx="8" fill="#070b16" stroke="#1d2d48" stroke-width="1"/>
+      <circle cx="44" cy="491" r="3.5" fill="#34d399"/>
+      <text x="58" y="495" font-size="12.5" font-weight="700" fill="#cbd5e1">B.E. CSE MSU Baroda (3rd Year) &#183; Open for Opportunities &amp; AI Collaborations</text>
     </g>
   </g>
 </g>

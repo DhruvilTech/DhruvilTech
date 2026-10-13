@@ -51,6 +51,8 @@
 
 <a id="credentials"></a>
 
+## 🪪 Technical Credentials & Skills Radar
+
 <div align="center">
 
 <picture>
