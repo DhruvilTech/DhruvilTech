@@ -32,36 +32,9 @@
        style="max-width:100%;margin-top:6px;border-radius:14px;"/>
 </picture>
 
-<br/><br/>
-
-<!-- QUICK ACTION & CONNECT BADGES -->
-[![Open to Work](https://img.shields.io/badge/Status-Open%20to%20Internships%20%26%20Full--Time-22d3ee?style=for-the-badge&logo=briefcase&logoColor=white&labelColor=070b16)](#contact)
-[![Location](https://img.shields.io/badge/📍%20Location-Vadodara%2C%20Gujarat%2C%20India%20%7C%20Remote%20OK-8b5cf6?style=for-the-badge&labelColor=070b16)](#contact)
-[![CGPA](https://img.shields.io/badge/Education-B.E.%20CSE%20·%208.43%20CGPA%20·%20MS%20Univ.-34d399?style=for-the-badge&labelColor=070b16)](#awards)
-
-<br/><br/>
-
-<a href="mailto:dhruvildattani9@gmail.com">
-  <img src="https://img.shields.io/badge/✉%20Email%20Me-dhruvildattani9%40gmail.com-ff3b5c?style=for-the-badge&logo=gmail&logoColor=white&labelColor=070b16" alt="Email Dhruvil"/>
-</a>
-&nbsp;
-<a href="https://dhruvildattani-portfolio.vercel.app/" target="_blank">
-  <img src="https://img.shields.io/badge/🌐%20Portfolio-dhruvildattani.vercel.app-22d3ee?style=for-the-badge&labelColor=070b16" alt="Portfolio"/>
-</a>
-&nbsp;
-<a href="https://www.linkedin.com/in/dhruvil-dattani-b43599317/" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-Dhruvil%20Dattani-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=070b16" alt="LinkedIn"/>
-</a>
-&nbsp;
-<a href="https://github.com/DhruvilTech" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-@DhruvilTech-e6edf3?style=for-the-badge&logo=github&logoColor=white&labelColor=070b16" alt="GitHub"/>
-</a>
+</div>
 
 <br/>
-
-> **🕐 Timezone:** IST (UTC +5:30) · Vadodara, Gujarat, India · **Available globally for high-impact engineering roles**
-
-</div>
 
 <br/>
 
@@ -607,6 +580,10 @@
 
 <div align="center">
 
+<a href="https://dhruvildattani-portfolio.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/Portfolio-dhruvildattani.vercel.app-22d3ee?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=070b16" alt="Portfolio"/>
+</a>
+&nbsp;
 <a href="mailto:dhruvildattani9@gmail.com">
   <img src="https://img.shields.io/badge/Email-dhruvildattani9%40gmail.com-ff3b5c?style=for-the-badge&logo=gmail&logoColor=white&labelColor=070b16" alt="Email"/>
 </a>
