@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 155" width="1150" height="155" role="img" aria-label="Dhruvil Dattani - System Status &amp; Signal Telemetry Carrier">
+  <title>Dhruvil Dattani - Signal Telemetry Carrier</title>
+  <defs>
+    <!-- Background Gradient (matching builder-pass.svg) -->
+    <linearGradient id="cleanFooterBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1022"/>
+      <stop offset="50%" stop-color="#070b14"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+
+    <!-- Border Gradient (exact builder-pass.svg hairline) -->
+    <linearGradient id="cleanFooterBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#247bff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#567394" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ff354f" stop-opacity="0.75"/>
+    </linearGradient>
+
+    <!-- Punchline Gradient -->
+    <linearGradient id="cleanPunchline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#ff354f"/>
+    </linearGradient>
+
+    <!-- Wave Line Gradient -->
+    <linearGradient id="signalWaveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.3"/>
+      <stop offset="30%" stop-color="#22d3ee" stop-opacity="1.0"/>
+      <stop offset="70%" stop-color="#8b5cf6" stop-opacity="1.0"/>
+      <stop offset="100%" stop-color="#ff354f" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Dot Pattern (exact builder-pass.svg stack-dots) -->
+    <pattern id="cleanFooterDots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.7" fill="#99b1db" opacity="0.14"/>
+    </pattern>
+
+    <!-- Neon Glow Filter -->
+    <filter id="waveGlow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Container Base -->
+  <rect x="2" y="2" width="1146" height="151" rx="18" fill="url(#cleanFooterBg)" stroke="url(#cleanFooterBorder)" stroke-width="1.5"/>
+  <rect x="2" y="2" width="1146" height="151" rx="18" fill="url(#cleanFooterDots)"/>
+
+  <!-- Cyber Corner Tech Ticks -->
+  <path d="M2 18 L2 2 L18 2" fill="none" stroke="#22d3ee" stroke-width="2.5" opacity="0.9"/>
+  <path d="M1148 137 L1148 153 L1132 153" fill="none" stroke="#ff354f" stroke-width="2.5" opacity="0.9"/>
+
+  <!-- ============================================================ -->
+  <!-- LEFT SIDE: FULL DEVELOPER DETAILS IN ABSOLUTE PERFECTION      -->
+  <!-- ============================================================ -->
+  <g transform="translate(46, 24)">
+    <!-- 1. Powerful Display Heading (Replaces the robotic 06 line) -->
+    <text y="38" font-family="'Inter', -apple-system, sans-serif" font-size="28" font-weight="900" letter-spacing="-0.5">
+      <tspan fill="#f8fafc">FROM THOUGHT TO THING. </tspan>
+      <tspan fill="url(#cleanPunchline)">KEEP BUILDING.</tspan>
+    </text>
+
+    <!-- 2. Developer Name & Core Engineering Domain -->
+    <text y="70" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" letter-spacing="1.6">
+      <tspan fill="#22d3ee">DHRUVIL DATTANI</tspan>
+      <tspan fill="#64748b"> // </tspan>
+      <tspan fill="#94a3b8">AI SYSTEMS &amp; FULL-STACK ENGINEER</tspan>
+    </text>
+
+    <!-- 3. Academic Institution, Location & Availability Badges Strip (y=92) -->
+    <g transform="translate(0, 92)">
+      <!-- Academic Badge: MSU BARODA · CSE -->
+      <g>
+        <rect width="165" height="24" rx="5" fill="#070b14" stroke="#a78bfa" stroke-opacity="0.45" stroke-width="1"/>
+        <rect width="3.5" height="24" rx="1.5" fill="#a78bfa"/>
+        <text x="10" y="16" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="800" fill="#c4b5fd" letter-spacing="0.8">MSU BARODA · CSE</text>
+      </g>
+      <!-- Location Badge -->
+      <g transform="translate(175, 0)">
+        <rect width="205" height="24" rx="5" fill="#070b14" stroke="#22d3ee" stroke-opacity="0.45" stroke-width="1"/>
+        <rect width="3.5" height="24" rx="1.5" fill="#22d3ee"/>
+        <text x="10" y="16" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="800" fill="#67e8f9" letter-spacing="0.8">VADODARA, GUJARAT 🇮🇳</text>
+      </g>
+      <!-- Availability Badge -->
+      <g transform="translate(390, 0)">
+        <rect width="180" height="24" rx="5" fill="#070b14" stroke="#34d399" stroke-opacity="0.5" stroke-width="1"/>
+        <rect width="3.5" height="24" rx="1.5" fill="#34d399"/>
+        <circle cx="12" cy="12" r="2.8" fill="#34d399"/>
+        <text x="20" y="16" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="800" fill="#34d399" letter-spacing="0.8">OPEN TO SDE &amp; AI</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- RIGHT SIDE: PURE UNOBSTRUCTED SIGNAL OSCILLOSCOPE WAVE       -->
+  <!-- (Latency pill removed for a clean, elegant aesthetic)       -->
+  <!-- ============================================================ -->
+  <g transform="translate(710, 24)">
+
+    <!-- Background Guideline Grid -->
+    <line x1="0" y1="52" x2="390" y2="52" stroke="#1e293b" stroke-width="1" stroke-dasharray="4 6" opacity="0.5"/>
+    <line x1="0" y1="28" x2="390" y2="28" stroke="#1e293b" stroke-width="0.8" stroke-dasharray="2 4" opacity="0.3"/>
+    <line x1="0" y1="76" x2="390" y2="76" stroke="#1e293b" stroke-width="0.8" stroke-dasharray="2 4" opacity="0.3"/>
+
+    <!-- Glowing Continuous Cyber Telemetry Wave (Animated smoothly) -->
+    <path fill="none" stroke="url(#signalWaveGrad)" stroke-width="2.6" filter="url(#waveGlow)">
+      <animate attributeName="d" dur="3.5s" repeatCount="indefinite"
+        values="M0,52 Q48,16 98,52 T195,52 T292,52 T390,52;
+                M0,52 Q48,82 98,52 T195,52 T292,52 T390,52;
+                M0,52 Q48,26 98,52 T195,52 T292,52 T390,52;
+                M0,52 Q48,16 98,52 T195,52 T292,52 T390,52"/>
+    </path>
+
+    <!-- Traveling Laser Photon Packet along the Waveform -->
+    <circle cx="0" cy="52" r="5" fill="#22d3ee" filter="url(#waveGlow)">
+      <animate attributeName="cx" values="0;390;0" dur="4.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="52" r="2.2" fill="#ffffff">
+      <animate attributeName="cx" values="0;390;0" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

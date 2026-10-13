@@ -567,52 +567,57 @@
 
 <a id="contact"></a>
 
-## 📬 Get in Touch & Connect
+## 📬 Transmission Protocol & Direct Connect Hub
 
 <div align="center">
 
-<a href="https://dhruvildattani-portfolio.vercel.app/" target="_blank">
-  <img src="https://img.shields.io/badge/Portfolio-dhruvildattani.vercel.app-22d3ee?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=070b16" alt="Portfolio"/>
-</a>
-&nbsp;
-<a href="mailto:dhruvildattani9@gmail.com">
-  <img src="https://img.shields.io/badge/Email-dhruvildattani9%40gmail.com-ff3b5c?style=for-the-badge&logo=gmail&logoColor=white&labelColor=070b16" alt="Email"/>
-</a>
-&nbsp;
-<a href="https://www.linkedin.com/in/dhruvil-dattani-b43599317/" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-Dhruvil%20Dattani-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=070b16" alt="LinkedIn"/>
-</a>
-&nbsp;
-<a href="https://github.com/DhruvilTech" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-@DhruvilTech-e6edf3?style=for-the-badge&logo=github&logoColor=white&labelColor=070b16" alt="GitHub"/>
-</a>
-&nbsp;
-<a href="tel:+919714415180">
-  <img src="https://img.shields.io/badge/Call-+91%209714415180-34d399?style=for-the-badge&logo=phone&logoColor=white&labelColor=070b16" alt="Phone"/>
-</a>
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/connect-hub.svg">
+  <img src="assets/connect-hub.svg"
+       alt="Dhruvil Dattani - Transmission Protocol & Direct Comms Active"
+       width="100%"
+       style="max-width:100%;border-radius:18px;"/>
+</picture>
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=DhruvilTech&style=for-the-badge&color=8b5cf6&label=Profile+Views&base=0" alt="Profile view counter"/>
+<!-- Working Direct Comms Link Badges -->
+<a href="https://dhruvildattani-portfolio.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/PORTFOLIO-dhruvildattani--portfolio.vercel.app-22d3ee?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=070b16" alt="Portfolio"/>
+</a>
+&nbsp;
+<a href="https://www.linkedin.com/in/dhruvil-dattani-b43599317/" target="_blank">
+  <img src="https://img.shields.io/badge/LINKEDIN-Dhruvil%20Dattani-8b5cf6?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=070b16" alt="LinkedIn"/>
+</a>
+&nbsp;
+<a href="mailto:dhruvildattani9@gmail.com">
+  <img src="https://img.shields.io/badge/EMAIL-dhruvildattani9%40gmail.com-ff354f?style=for-the-badge&logo=gmail&logoColor=white&labelColor=070b16" alt="Email"/>
+</a>
+&nbsp;
+<a href="https://github.com/DhruvilTech" target="_blank">
+  <img src="https://img.shields.io/badge/GITHUB-%40DhruvilTech-38bdf8?style=for-the-badge&logo=github&logoColor=white&labelColor=070b16" alt="GitHub"/>
+</a>
+&nbsp;
+<img src="https://komarev.com/ghpvc/?username=DhruvilTech&style=for-the-badge&color=8b5cf6&label=PROFILE+VIEWS&base=0" alt="Profile Views"/>
 
 <br/><br/>
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/footer-wave.svg">
-  <img src="assets/footer-wave.svg"
-       alt="Animated wave footer"
+  <source media="(prefers-color-scheme: light)" srcset="assets/footer.svg">
+  <img src="assets/footer.svg"
+       alt="Dhruvil Dattani - System Status & Telemetry"
        width="100%"
-       style="border-radius:12px;"/>
+       style="max-width:100%;border-radius:18px;"/>
 </picture>
 
-<br/>
+<br/><br/>
 
 <sub>
-  <code>Made with ☕ + code in Vadodara, Gujarat, India 🇮🇳</code>
+  <code>Vadodara, Gujarat, India 🇮🇳</code>
   &nbsp;·&nbsp;
   <code>Stats auto-refreshed every 6h via GitHub Actions</code>
   &nbsp;·&nbsp;
-  <code>Built by Dhruvil Dattani</code>
+  <code>Engineered by Dhruvil Dattani</code>
 </sub>
 
 </div>
