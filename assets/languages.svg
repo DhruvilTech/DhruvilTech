@@ -22,25 +22,25 @@
   <text x="24" y="88" fill="#e6edf3" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="11" font-weight="bold">TypeScript</text>
   <rect x="150" y="76" width="540" height="14" rx="7" fill="#0b1224"/>
   <rect x="150" y="76" width="0" height="14" rx="7" fill="#3178c6">
-    <animate attributeName="width" from="0" to="205" dur="1.0s" begin="0.35s" fill="freeze"/>
+    <animate attributeName="width" from="0" to="207" dur="1.0s" begin="0.35s" fill="freeze"/>
   </rect>
-  <text x="710" y="87" fill="#3178c6" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="10" font-weight="bold">19.7%</text>
+  <text x="710" y="87" fill="#3178c6" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="10" font-weight="bold">19.8%</text>
   <text x="24" y="116" fill="#e6edf3" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="11" font-weight="bold">Python</text>
   <rect x="150" y="104" width="540" height="14" rx="7" fill="#0b1224"/>
   <rect x="150" y="104" width="0" height="14" rx="7" fill="#3572A5">
-    <animate attributeName="width" from="0" to="142" dur="1.0s" begin="0.5s" fill="freeze"/>
+    <animate attributeName="width" from="0" to="144" dur="1.0s" begin="0.5s" fill="freeze"/>
   </rect>
-  <text x="710" y="115" fill="#3572A5" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="10" font-weight="bold">13.6%</text>
+  <text x="710" y="115" fill="#3572A5" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="10" font-weight="bold">13.8%</text>
   <text x="24" y="144" fill="#e6edf3" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="11" font-weight="bold">HTML</text>
   <rect x="150" y="132" width="540" height="14" rx="7" fill="#0b1224"/>
   <rect x="150" y="132" width="0" height="14" rx="7" fill="#e34c26">
-    <animate attributeName="width" from="0" to="66" dur="1.0s" begin="0.6499999999999999s" fill="freeze"/>
+    <animate attributeName="width" from="0" to="65" dur="1.0s" begin="0.6499999999999999s" fill="freeze"/>
   </rect>
-  <text x="710" y="143" fill="#e34c26" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="10" font-weight="bold">6.4%</text>
+  <text x="710" y="143" fill="#e34c26" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="10" font-weight="bold">6.2%</text>
   <text x="24" y="172" fill="#e6edf3" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="11" font-weight="bold">CSS</text>
   <rect x="150" y="160" width="540" height="14" rx="7" fill="#0b1224"/>
   <rect x="150" y="160" width="0" height="14" rx="7" fill="#563d7c">
-    <animate attributeName="width" from="0" to="49" dur="1.0s" begin="0.8s" fill="freeze"/>
+    <animate attributeName="width" from="0" to="48" dur="1.0s" begin="0.8s" fill="freeze"/>
   </rect>
-  <text x="710" y="171" fill="#563d7c" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="10" font-weight="bold">4.7%</text>
+  <text x="710" y="171" fill="#563d7c" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace" font-size="10" font-weight="bold">4.6%</text>
 </svg>
