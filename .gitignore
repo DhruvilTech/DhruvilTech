@@ -21,3 +21,6 @@ assets/*.bak
 
 # Temp
 *.placeholder
+*.py
+scratch/
+

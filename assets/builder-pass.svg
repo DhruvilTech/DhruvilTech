@@ -205,8 +205,8 @@
 
     <!-- NAME & ROLES -->
     <text x="40" y="358" class="d8" font-size="34" fill="#eef2ff" letter-spacing="0.5">DHRUVIL DATTANI</text>
-    <text x="40" y="379" class="m4" font-size="13" font-weight="900" fill="#38bdf8" letter-spacing="0.5" style="fill:#38bdf8;font-weight:900;">AI SYSTEMS · FULL-STACK DEV</text>
-    <text x="40" y="398" class="m4" font-size="11.5" font-weight="800" fill="#cbd5e1" letter-spacing="0.5" style="fill:#cbd5e1;font-weight:800;">MSU BARODA · B.E. CSE 2026</text>
+    <text x="40" y="379" class="m4" font-size="13" font-weight="900" fill="#38bdf8" letter-spacing="0.5" style="fill:#38bdf8;font-weight:900;">AI ENGINEER · FULL-STACK DEV</text>
+    <text x="40" y="398" class="m4" font-size="11.5" font-weight="800" fill="#cbd5e1" letter-spacing="0.5" style="fill:#cbd5e1;font-weight:800;">MSU BARODA · B.E. CSE</text>
 
     <!-- HIGH RESOLUTION BARCODE & ID -->
     <g fill="#eef2ff" transform="translate(40, 410)">
@@ -273,7 +273,7 @@
   <rect width="284" height="438" rx="14" fill="#0d1424" stroke="#1e293b" stroke-width="1.2"/>
   <rect width="284" height="4" rx="2" fill="url(#idc-hair)"/>
   
-  <text x="20" y="30" font-family="'JetBrains Mono', monospace" font-size="12.5" font-weight="900" fill="#22d3ee" letter-spacing="2" style="fill:#22d3ee;font-family:'JetBrains Mono',monospace;font-weight:900;">04 // BUILDER STATS</text>
+  <text x="20" y="30" font-family="'JetBrains Mono', monospace" font-size="12.5" font-weight="900" fill="#22d3ee" letter-spacing="2" style="fill:#22d3ee;font-family:'JetBrains Mono',monospace;font-weight:900;">BUILDER STATS</text>
   
   <!-- Stat 1: Commits -->
   <rect x="16" y="44" width="252" height="62" rx="8" fill="#070b16" stroke="#22d3ee" stroke-opacity=".3" stroke-width="1"/>
@@ -302,9 +302,9 @@
     <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/>
   </circle>
   <text x="48" y="294" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#34d399" letter-spacing="1.2" style="fill:#34d399;font-weight:900;">CURRENT SPRINT &amp; FOCUS</text>
-  <text x="32" y="324" font-size="15" font-weight="900" fill="#ffffff" style="fill:#ffffff;font-weight:900;">AI Systems &amp; Full-Stack</text>
+  <text x="32" y="324" font-size="15" font-weight="900" fill="#ffffff" style="fill:#ffffff;font-weight:900;">AI Engineer &amp; Full-Stack</text>
   <text x="32" y="349" font-size="12" font-weight="800" fill="#f1f5f9" style="fill:#f1f5f9;font-weight:800;">InternX · CodeLens · KrishiMitra</text>
-  <text x="32" y="377" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#38bdf8" style="fill:#38bdf8;font-weight:900;">MSU Baroda · CSE 2026</text>
+  <text x="32" y="377" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#38bdf8" style="fill:#38bdf8;font-weight:900;">MSU Baroda · CSE</text>
   <text x="32" y="401" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#34d399" style="fill:#34d399;font-weight:900;">● OPEN FOR SDE / AI ROLES</text>
 </g>
 
@@ -312,10 +312,9 @@
   <!-- Divider Line Between Left Column and Right Panel -->
   <line x1="325" y1="25" x2="325" y2="995" stroke="#1d2d48" stroke-width="1.5" stroke-dasharray="4 4"/>
 
-  <!-- Right Panel Header (Clean, 3 red slashes REMOVED!) -->
-  <text x="355" y="40" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="900" fill="#8e9db9" class="mono" letter-spacing="1.8" style="fill:#8e9db9;font-weight:900;">03 // ENGINE ROOM &amp; SKILL RADAR</text>
-  <text x="353" y="78" font-size="35" font-weight="900" fill="#f2f5ff" style="fill:#f2f5ff;font-weight:900;">TOOLS CHANGE. CURIOSITY DOESN’T.</text>
-  <text x="355" y="105" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#8e9db9" class="mono" letter-spacing="1.8" style="fill:#8e9db9;font-weight:800;">LANGUAGES // SYSTEMS // DISTRIBUTED ARCHITECTURE</text>
+  <!-- Right Panel Header (Simple, clean & clear) -->
+  <text x="353" y="78" font-family="'Inter', -apple-system, sans-serif" font-size="35" font-weight="900" letter-spacing="-0.5" style="fill:#f2f5ff;font-weight:900;"><tspan fill="#f2f5ff">TECH STACK &amp; </tspan><tspan fill="#38bdf8">SKILLS.</tspan></text>
+  <text x="355" y="105" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#8e9db9" class="mono" letter-spacing="1.8" style="fill:#8e9db9;font-weight:800;">LANGUAGES // FRAMEWORKS // ARCHITECTURE</text>
 
   <!-- Orbital Planetary System on Top Right (center at cy=330, plenty of room above & below!) -->
   <!-- Orbital Planetary System on Top Right (center at cx=757, cy=275) -->
@@ -434,27 +433,35 @@
     </g>
   </g>
 
-  <!-- Card 4: 04 · AI / GENAI -->
+  <!-- Card 4: 04 · AI / ML -->
   <g transform="translate(765, 710)">
     <rect width="395" height="116" rx="10" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
     <rect width="395" height="3" rx="1.5" fill="url(#barGradCoral)"/>
-    <text x="16" y="23" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="900" fill="#ff354f" letter-spacing="1.5" style="fill:#ff354f;font-family:'JetBrains Mono',monospace;font-weight:900;">04 · AI / GENAI</text>
+    <text x="16" y="23" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="900" fill="#ff354f" letter-spacing="1.5" style="fill:#ff354f;font-family:'JetBrains Mono',monospace;font-weight:900;">04 · AI / ML</text>
     <g transform="translate(16, 36)">
-      <rect width="112" height="32" rx="7" fill="#070b16" stroke="#10b981" stroke-opacity=".5" stroke-width="1.2"/>
-      <circle cx="13" cy="16" r="4.5" fill="#10b981"/>
-      <text x="24" y="20.5" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#ffffff" style="fill:#ffffff;font-family:'JetBrains Mono',monospace;font-weight:800;">LangChain</text>
-    </g><g transform="translate(138, 36)">
-      <rect width="118" height="32" rx="7" fill="#070b16" stroke="#ff6f00" stroke-opacity=".5" stroke-width="1.2"/>
+      <rect width="90" height="32" rx="7" fill="#070b16" stroke="#ee4c2c" stroke-opacity=".6" stroke-width="1.2"/>
+      <circle cx="13" cy="16" r="4.5" fill="#ee4c2c"/>
+      <text x="24" y="20.5" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#ffffff" style="fill:#ffffff;font-family:'JetBrains Mono',monospace;font-weight:800;">PyTorch</text>
+    </g><g transform="translate(114, 36)">
+      <rect width="114" height="32" rx="7" fill="#070b16" stroke="#ff6f00" stroke-opacity=".6" stroke-width="1.2"/>
       <circle cx="13" cy="16" r="4.5" fill="#ff6f00"/>
       <text x="24" y="20.5" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#ffffff" style="fill:#ffffff;font-family:'JetBrains Mono',monospace;font-weight:800;">TensorFlow</text>
-    </g><g transform="translate(266, 36)">
-      <rect width="74" height="32" rx="7" fill="#070b16" stroke="#a855f7" stroke-opacity=".5" stroke-width="1.2"/>
-      <circle cx="13" cy="16" r="4.5" fill="#a855f7"/>
-      <text x="24" y="20.5" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#ffffff" style="fill:#ffffff;font-family:'JetBrains Mono',monospace;font-weight:800;">LLMs</text>
+    </g><g transform="translate(236, 36)">
+      <rect width="108" height="32" rx="7" fill="#070b16" stroke="#10b981" stroke-opacity=".6" stroke-width="1.2"/>
+      <circle cx="13" cy="16" r="4.5" fill="#10b981"/>
+      <text x="24" y="20.5" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#ffffff" style="fill:#ffffff;font-family:'JetBrains Mono',monospace;font-weight:800;">LangChain</text>
     </g><g transform="translate(16, 74)">
-      <rect width="90" height="32" rx="7" fill="#070b16" stroke="#ff354f" stroke-opacity=".5" stroke-width="1.2"/>
+      <rect width="84" height="32" rx="7" fill="#070b16" stroke="#ff354f" stroke-opacity=".6" stroke-width="1.2"/>
       <circle cx="13" cy="16" r="4.5" fill="#ff354f"/>
       <text x="24" y="20.5" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#ffffff" style="fill:#ffffff;font-family:'JetBrains Mono',monospace;font-weight:800;">YOLOv8</text>
+    </g><g transform="translate(108, 74)">
+      <rect width="124" height="32" rx="7" fill="#070b16" stroke="#f89939" stroke-opacity=".6" stroke-width="1.2"/>
+      <circle cx="13" cy="16" r="4.5" fill="#f89939"/>
+      <text x="24" y="20.5" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#ffffff" style="fill:#ffffff;font-family:'JetBrains Mono',monospace;font-weight:800;">scikit-learn</text>
+    </g><g transform="translate(240, 74)">
+      <rect width="140" height="32" rx="7" fill="#070b16" stroke="#06b6d4" stroke-opacity=".6" stroke-width="1.2"/>
+      <circle cx="13" cy="16" r="4.5" fill="#06b6d4"/>
+      <text x="24" y="20.5" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="800" fill="#ffffff" style="fill:#ffffff;font-family:'JetBrains Mono',monospace;font-weight:800;">Computer Vision</text>
     </g>
   </g>
 
@@ -500,14 +507,6 @@
       <rect width="92" height="32" rx="7" fill="#070b16" stroke="#f37626" stroke-opacity=".5" stroke-width="1.2"/>
       <circle cx="13" cy="16" r="4.5" fill="#f37626"/>
       <text x="24" y="20.5" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#ffffff" style="fill:#ffffff;font-family:'JetBrains Mono',monospace;font-weight:800;">Jupyter</text>
-    </g><g transform="translate(16, 74)">
-      <rect width="94" height="32" rx="7" fill="#070b16" stroke="#fe315d" stroke-opacity=".5" stroke-width="1.2"/>
-      <circle cx="13" cy="16" r="4.5" fill="#fe315d"/>
-      <text x="24" y="20.5" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#ffffff" style="fill:#ffffff;font-family:'JetBrains Mono',monospace;font-weight:800;">IntelliJ</text>
-    </g><g transform="translate(120, 74)">
-      <rect width="94" height="32" rx="7" fill="#070b16" stroke="#21d789" stroke-opacity=".5" stroke-width="1.2"/>
-      <circle cx="13" cy="16" r="4.5" fill="#21d789"/>
-      <text x="24" y="20.5" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#ffffff" style="fill:#ffffff;font-family:'JetBrains Mono',monospace;font-weight:800;">PyCharm</text>
     </g>
   </g>
 </g>

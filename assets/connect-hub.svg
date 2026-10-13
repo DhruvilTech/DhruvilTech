@@ -10,9 +10,9 @@
 
     <!-- Outer Border Gradient (matching builder-pass.svg hairline) -->
     <linearGradient id="hubBorderClean" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#247bff" stop-opacity="0.8"/>
-      <stop offset="50%" stop-color="#567394" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#ff354f" stop-opacity="0.75"/>
+      <stop offset="0%" stop-color="#247bff" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#567394" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ff354f" stop-opacity="0.65"/>
     </linearGradient>
 
     <!-- Title Gradient for REAL IMPACT -->
@@ -55,13 +55,9 @@
     </filter>
   </defs>
 
-  <!-- Container Base -->
-  <rect x="2" y="2" width="1146" height="526" rx="20" fill="url(#hubBgClean)" stroke="url(#hubBorderClean)" stroke-width="1.5"/>
+  <!-- Container Base (border styling matching builder-pass & stats-row) -->
+  <rect x="2" y="2" width="1146" height="526" rx="20" fill="url(#hubBgClean)" stroke="url(#hubBorderClean)" stroke-width="1.2"/>
   <rect x="2" y="2" width="1146" height="526" rx="20" fill="url(#hubDotsClean)"/>
-
-  <!-- Cyber Corner Tech Ticks -->
-  <path d="M2 18 L2 2 L18 2" fill="none" stroke="#22d3ee" stroke-width="2.5" opacity="0.9"/>
-  <path d="M1148 508 L1148 526 L1130 526" fill="none" stroke="#ff354f" stroke-width="2.5" opacity="0.9"/>
 
   <!-- Top System Header Track (Matching builder-pass.svg hierarchy) -->
   <g transform="translate(42, 34)">

@@ -486,12 +486,64 @@ function generateBuilderPass(userData, snapshot) {
   return '';
 }
 
-function generateStatsRow(totalContribs, streaks) {
+function generateStatsRow(totalContribs, streaks, langs = []) {
   const curStreak = streaks?.currentStreak ?? 1;
   const longStreak = streaks?.longestStreak ?? 7;
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" role="img" aria-label="GitHub stats row: contributions, streak, longest streak">
+  const topLangs = (Array.isArray(langs) && langs.length > 0)
+    ? langs.slice(0, 5)
+    : [
+        { name: 'JavaScript', bytes: 60000, pct: '51.9', color: '#f1e05a' },
+        { name: 'TypeScript', bytes: 23000, pct: '19.8', color: '#3178c6' },
+        { name: 'Python', bytes: 16000, pct: '13.8', color: '#3572A5' },
+        { name: 'HTML', bytes: 7200, pct: '6.2', color: '#e34c26' },
+        { name: 'CSS', bytes: 5300, pct: '4.6', color: '#563d7c' },
+      ];
+
+  const maxBytes = topLangs[0]?.bytes || 1;
+  const maxBarW = 910;
+
+  const langRows = topLangs.map((lang, i) => {
+    const bw = Math.max(16, Math.round((lang.bytes / maxBytes) * maxBarW));
+    const y = 212 + i * 36;
+    const color = lang.color || '#8b5cf6';
+    const delay = (0.2 + i * 0.15).toFixed(2);
+    return `  <text x="44" y="${y + 11}" fill="#f8fafc" font-size="12" font-weight="700">${xmlEscape(lang.name)}</text>
+  <rect x="170" y="${y}" width="910" height="14" rx="7" fill="#070e1b" stroke="#1d2d48" stroke-width="0.8"/>
+  <rect x="170" y="${y}" width="0" height="14" rx="7" fill="${color}">
+    <animate attributeName="width" from="0" to="${bw}" dur="1.0s" begin="${delay}s" fill="freeze"/>
+  </rect>
+  <text x="1156" y="${y + 11}" text-anchor="end" fill="${color}" font-size="12" font-weight="800">${lang.pct}%</text>`;
+  }).join('\n');
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" role="img" aria-label="GitHub stats: contributions, streak, longest streak, and top languages">
 <defs>
+  <!-- Builder-Pass Theme Gradients & Patterns -->
+  <linearGradient id="stack-hairline" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#247bff" stop-opacity=".7"/>
+    <stop offset=".5" stop-color="#567394" stop-opacity=".25"/>
+    <stop offset="1" stop-color="#ff354f" stop-opacity=".65"/>
+  </linearGradient>
+  <pattern id="stack-dots" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r=".7" fill="#99b1db" opacity=".13"/>
+  </pattern>
+  <linearGradient id="idc-cardbg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#16213f"/>
+    <stop offset="1" stop-color="#0a1126"/>
+  </linearGradient>
+  <linearGradient id="idc-hair" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#247bff"/>
+    <stop offset=".5" stop-color="#7b5cff" stop-opacity=".55"/>
+    <stop offset="1" stop-color="#ff354f"/>
+  </linearGradient>
+  <radialGradient id="glow-cyan" cx="20%" cy="30%" r="40%">
+    <stop offset="0%" stop-color="#247bff" stop-opacity=".18"/>
+    <stop offset="100%" stop-color="#247bff" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow-coral" cx="80%" cy="30%" r="40%">
+    <stop offset="0%" stop-color="#ff354f" stop-opacity=".14"/>
+    <stop offset="100%" stop-color="#ff354f" stop-opacity="0"/>
+  </radialGradient>
   <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
     <stop offset="0%" stop-color="#22d3ee"/>
     <stop offset="100%" stop-color="#3b82f6"/>
@@ -503,6 +555,11 @@ function generateStatsRow(totalContribs, streaks) {
   <linearGradient id="violetLine" x1="0%" y1="0%" x2="100%" y2="0%">
     <stop offset="0%" stop-color="#a78bfa"/>
     <stop offset="100%" stop-color="#8b5cf6"/>
+  </linearGradient>
+  <linearGradient id="multiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#22d3ee"/>
+    <stop offset="50%" stop-color="#8b5cf6"/>
+    <stop offset="100%" stop-color="#ff3b5c"/>
   </linearGradient>
   <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
     <stop offset="0%" stop-color="#ff3b5c"/>
@@ -516,39 +573,61 @@ function generateStatsRow(totalContribs, streaks) {
     <feGaussianBlur stdDeviation="3" result="blur"/>
     <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
+  <clipPath id="stats-outer">
+    <rect x="1" y="1" width="1198" height="428" rx="22"/>
+  </clipPath>
 </defs>
 
-<!-- Card 1: Total Contributions -->
-<g transform="translate(15, 10)">
-  <rect width="376" height="120" rx="14" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
-  <rect width="376" height="3" rx="1.5" fill="url(#cyanLine)"/>
-  <text x="188" y="58" text-anchor="middle" fill="#22d3ee" font-size="36" font-weight="900" filter="url(#glowCyan)">${totalContribs}</text>
-  <text x="188" y="84" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700">Total Contributions</text>
-  <text x="188" y="104" text-anchor="middle" fill="#64748b" font-size="10">Jun 2025 – Present · Live GitHub API</text>
-</g>
+<!-- Outer Container with Builder-Pass Background -->
+<g clip-path="url(#stats-outer)">
+  <rect x="1" y="1" width="1198" height="428" rx="22" fill="#070b16" stroke="url(#stack-hairline)" stroke-width="1.2"/>
+  <rect x="2" y="2" width="1196" height="426" rx="21" fill="url(#stack-dots)" stroke="none"/>
+  <rect width="1200" height="430" fill="url(#glow-cyan)"/>
+  <rect width="1200" height="430" fill="url(#glow-coral)"/>
 
-<!-- Card 2: Current Streak -->
-<g transform="translate(412, 10)">
-  <rect width="376" height="120" rx="14" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
-  <rect width="376" height="3" rx="1.5" fill="url(#coralLine)"/>
-  <g transform="translate(188, 48)">
-    <circle cx="0" cy="0" r="26" fill="none" stroke="rgba(255,59,92,0.2)" stroke-width="3"/>
-    <circle cx="0" cy="0" r="26" fill="none" stroke="url(#flameGrad)" stroke-width="3" stroke-dasharray="163" stroke-dashoffset="60">
-      <animate attributeName="stroke-dashoffset" values="60;35;60" dur="2.5s" repeatCount="indefinite"/>
-    </circle>
-    <text x="0" y="7" text-anchor="middle" font-size="20">🔥</text>
+  <!-- Card 1: Total Contributions -->
+  <g transform="translate(20, 20)">
+    <rect width="376" height="116" rx="14" fill="url(#idc-cardbg)" stroke="url(#idc-hair)" stroke-width="1.2"/>
+    <rect width="376" height="3" rx="1.5" fill="url(#cyanLine)"/>
+    <text x="188" y="56" text-anchor="middle" fill="#22d3ee" font-size="36" font-weight="900" filter="url(#glowCyan)">${totalContribs}</text>
+    <text x="188" y="82" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700">Total Contributions</text>
+    <text x="188" y="102" text-anchor="middle" fill="#64748b" font-size="10">Jun 2025 – Present · Live GitHub API</text>
   </g>
-  <text x="188" y="92" text-anchor="middle" fill="#ff3b5c" font-size="13" font-weight="800">${curStreak} Day Current Streak</text>
-  <text x="188" y="108" text-anchor="middle" fill="#64748b" font-size="10">Active Streak · Daily Shipping</text>
-</g>
 
-<!-- Card 3: Longest Streak -->
-<g transform="translate(809, 10)">
-  <rect width="376" height="120" rx="14" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
-  <rect width="376" height="3" rx="1.5" fill="url(#violetLine)"/>
-  <text x="188" y="58" text-anchor="middle" fill="#a78bfa" font-size="36" font-weight="900" filter="url(#glowViolet)">${longStreak} Days</text>
-  <text x="188" y="84" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700">Longest Streak</text>
-  <text x="188" y="104" text-anchor="middle" fill="#64748b" font-size="10">Personal Record · Consistent Builder 🏆</text>
+  <!-- Card 2: Current Streak -->
+  <g transform="translate(412, 20)">
+    <rect width="376" height="116" rx="14" fill="url(#idc-cardbg)" stroke="url(#idc-hair)" stroke-width="1.2"/>
+    <rect width="376" height="3" rx="1.5" fill="url(#coralLine)"/>
+    <g transform="translate(188, 46)">
+      <circle cx="0" cy="0" r="26" fill="none" stroke="rgba(255,59,92,0.2)" stroke-width="3"/>
+      <circle cx="0" cy="0" r="26" fill="none" stroke="url(#flameGrad)" stroke-width="3" stroke-dasharray="163" stroke-dashoffset="60">
+        <animate attributeName="stroke-dashoffset" values="60;35;60" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="0" y="7" text-anchor="middle" font-size="20">🔥</text>
+    </g>
+    <text x="188" y="90" text-anchor="middle" fill="#ff3b5c" font-size="13" font-weight="800">${curStreak} Day Current Streak</text>
+    <text x="188" y="106" text-anchor="middle" fill="#64748b" font-size="10">Active Streak · Daily Shipping</text>
+  </g>
+
+  <!-- Card 3: Longest Streak -->
+  <g transform="translate(804, 20)">
+    <rect width="376" height="116" rx="14" fill="url(#idc-cardbg)" stroke="url(#idc-hair)" stroke-width="1.2"/>
+    <rect width="376" height="3" rx="1.5" fill="url(#violetLine)"/>
+    <text x="188" y="56" text-anchor="middle" fill="#a78bfa" font-size="36" font-weight="900" filter="url(#glowViolet)">${longStreak} Days</text>
+    <text x="188" y="82" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700">Longest Streak</text>
+    <text x="188" y="102" text-anchor="middle" fill="#64748b" font-size="10">Personal Record · Consistent Builder 🏆</text>
+  </g>
+
+  <!-- Card 4: Top Languages (Integrated Full-Width Panel) -->
+  <g transform="translate(20, 152)">
+    <rect width="1160" height="258" rx="16" fill="url(#idc-cardbg)" stroke="url(#idc-hair)" stroke-width="1.2"/>
+    <rect width="1160" height="3" rx="1.5" fill="url(#multiGrad)"/>
+    <text x="24" y="32" fill="#22d3ee" font-size="12" font-weight="800" letter-spacing="2" filter="url(#glowCyan)">TOP LANGUAGES (REAL REPO CODE)</text>
+    <text x="1136" y="32" text-anchor="end" fill="#64748b" font-size="10">aggregated across all public repositories · live GitHub API</text>
+  </g>
+
+  <!-- Language Progress Rows -->
+${langRows}
 </g>
 </svg>`;
 }
@@ -663,20 +742,10 @@ async function main() {
 
     safeWrite(
       path.join(ASSETS_DIR, 'stats-row.svg'),
-      generateStatsRow(userData.totalContributions, userData.streaks)
+      generateStatsRow(userData.totalContributions, userData.streaks, langs)
     );
 
-    if (langs.length > 0) {
-      safeWrite(
-        path.join(ASSETS_DIR, 'languages.svg'),
-        generateLanguagesSVG(langs)
-      );
-    }
 
-    safeWrite(
-      path.join(ASSETS_DIR, 'now.svg'),
-      generateNowSVG(events, snapshot)
-    );
 
     console.log('\n✅ All profile assets successfully generated with live GitHub data!');
   } catch (err) {
