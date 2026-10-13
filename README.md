@@ -34,29 +34,6 @@
 
 <br/><br/>
 
-<!-- TELEMETRY HUD NAVIGATION BAR -->
-<p align="center">
-  <a href="#about"><b><code>[ 01 · ABOUT ]</code></b></a> &nbsp;•&nbsp;
-  <a href="#credentials"><b><code>[ 02 · CREDENTIALS ]</code></b></a> &nbsp;•&nbsp;
-  <a href="#projects"><b><code>[ 03 · PROJECTS ]</code></b></a> &nbsp;•&nbsp;
-  <a href="#stack"><b><code>[ 04 · STACK ]</code></b></a> &nbsp;•&nbsp;
-  <a href="#analytics"><b><code>[ 05 · ANALYTICS ]</code></b></a> &nbsp;•&nbsp;
-  <a href="#principles"><b><code>[ 06 · PRINCIPLES ]</code></b></a> &nbsp;•&nbsp;
-  <a href="#awards"><b><code>[ 07 · AWARDS ]</code></b></a> &nbsp;•&nbsp;
-  <a href="#contact"><b><code>[ 08 · CONTACT ]</code></b></a>
-</p>
-
-<!-- Live Telemetry Stats Row: Contributions · Current Streak · Longest Streak -->
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/stats-row.svg">
-  <img src="assets/stats-row.svg"
-       alt="GitHub stats: total contributions, current streak, longest streak"
-       width="100%"
-       style="max-width:100%;border-radius:14px;"/>
-</picture>
-
-<br/><br/>
-
 <!-- QUICK ACTION & CONNECT BADGES -->
 [![Open to Work](https://img.shields.io/badge/Status-Open%20to%20Internships%20%26%20Full--Time-22d3ee?style=for-the-badge&logo=briefcase&logoColor=white&labelColor=070b16)](#contact)
 [![Location](https://img.shields.io/badge/📍%20Location-Vadodara%2C%20Gujarat%2C%20India%20%7C%20Remote%20OK-8b5cf6?style=for-the-badge&labelColor=070b16)](#contact)
@@ -422,9 +399,20 @@
 
 ## 📊 Live GitHub Analytics & Radar
 
-<!-- Languages bar chart — LIVE from GitHub API -->
 <div align="center">
 
+<!-- GitHub Stats Row: Total Contributions · Current Streak · Longest Streak -->
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/stats-row.svg">
+  <img src="assets/stats-row.svg"
+       alt="GitHub stats: total contributions, current streak, longest streak"
+       width="100%"
+       style="max-width:100%;border-radius:14px;"/>
+</picture>
+
+<br/><br/>
+
+<!-- Languages bar chart — LIVE from GitHub API -->
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/languages.svg">
   <img src="assets/languages.svg"
