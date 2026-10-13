@@ -217,53 +217,59 @@ def build_perfect_4phase_terminal():
     particles_body = "\n".join(uses_list)
     print(f"Generated {len(uses_list)} particle elements!")
 
-    header = '''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="570" viewBox="0 0 1200 570" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" role="img" aria-label="Dhruvil Dattani — Developer Profile">
+    header = '''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="648" viewBox="0 0 1200 648" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" role="img" aria-label="Dhruvil Dattani — Developer Profile">
 <defs>
   <linearGradient id="stack-hairline"><stop stop-color="#247bff" stop-opacity=".7"/><stop offset=".5" stop-color="#567394" stop-opacity=".25"/><stop offset="1" stop-color="#ff354f" stop-opacity=".65"/></linearGradient>
   <pattern id="stack-dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="#99b1db" opacity=".13"/></pattern>
   <linearGradient id="barGradCyan" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#22d3ee"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient>
   <linearGradient id="barGradViolet" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#ec4899"/></linearGradient>
   <linearGradient id="barGradEmerald" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#34d399"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient>
+  <linearGradient id="tagGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#22d3ee"/>
+    <stop offset="50%" stop-color="#a78bfa"/>
+    <stop offset="100%" stop-color="#38bdf8"/>
+  </linearGradient>
   <filter id="txtGlow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="0.9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   <filter id="glow3" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3"/></filter>
-  <clipPath id="winClip"><rect x="1" y="1" width="1198" height="568" rx="22"/></clipPath>
+  <filter id="tagTextGlow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <clipPath id="winClip"><rect x="1" y="1" width="1198" height="646" rx="22"/></clipPath>
   <rect id="tvdark" width="1.6" height="1.3" rx="0.4" fill="#a78bfa"/>
 </defs>
-<rect x="1" y="1" width="1198" height="568" rx="22" fill="#070b16" stroke="url(#stack-hairline)" stroke-width="1.2"/>
-<rect x="2" y="2" width="1196" height="566" rx="21" fill="url(#stack-dots)" stroke="none"/>
+<rect x="1" y="1" width="1198" height="646" rx="22" fill="#070b16" stroke="url(#stack-hairline)" stroke-width="1.2"/>
+<rect x="2" y="2" width="1196" height="644" rx="21" fill="url(#stack-dots)" stroke="none"/>
 <rect x="1" y="1" width="1198" height="3" rx="1.5" fill="url(#barGradCyan)"/>
 <g clip-path="url(#winClip)">
   <!-- LEFT: HALFTONE PORTRAIT & LOGO MORPH -->
-  <rect x="24" y="20" width="418" height="528" rx="16" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
+  <rect x="24" y="20" width="418" height="536" rx="16" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
   <rect x="24" y="20" width="418" height="3" rx="1.5" fill="url(#barGradCyan)"/>
   <rect x="38" y="32" width="116" height="24" rx="6" fill="#070b16" stroke="#22d3ee" stroke-opacity=".4" stroke-width="1"/>
   <text x="96" y="48" text-anchor="middle" font-size="11" font-weight="900" letter-spacing="2" fill="#22d3ee">VISUAL.MAP</text>
 
-  <rect x="34" y="66" width="398" height="470" rx="10" fill="#070b16" stroke="#1d2d48" stroke-width="1"/>
-  <rect x="34" y="66" width="398" height="470" rx="10" fill="url(#stack-dots)" opacity="0.08"/>
-  <g transform="translate(48, 56) scale(1.2400, 1.4471)">
+  <rect x="34" y="66" width="398" height="476" rx="10" fill="#070b16" stroke="#1d2d48" stroke-width="1"/>
+  <rect x="34" y="66" width="398" height="476" rx="10" fill="url(#stack-dots)" opacity="0.08"/>
+  <g transform="translate(48, 52) scale(1.2400, 1.4000)">
 '''
 
     particles_footer = '''  </g>
   <path d="M 48 80 L 38 80 L 38 90" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.85"/>
   <path d="M 418 80 L 428 80 L 428 90" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.85"/>
-  <path d="M 48 522 L 38 522 L 38 512" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.85"/>
-  <path d="M 418 522 L 428 522 L 428 512" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.85"/>
+  <path d="M 48 530 L 38 530 L 38 520" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.85"/>
+  <path d="M 418 530 L 428 530 L 428 520" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.85"/>
 
-  <!-- UNIFIED RIGHT PANEL: ENGINEER IDENTITY & DIRECT NETWORKS -->
+  <!-- UNIFIED RIGHT PANEL: ENGINEER IDENTITY & ACADEMIC ACHIEVEMENTS -->
   <g transform="translate(460, 20)">
-    <rect width="716" height="528" rx="16" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
+    <rect width="716" height="536" rx="16" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
     <rect width="716" height="3" rx="1.5" fill="url(#barGradCyan)"/>
     
     <!-- Top Header -->
-    <text x="24" y="28" font-size="13" font-weight="900" letter-spacing="1.5" fill="#22d3ee" filter="url(#txtGlow)">01 · ENGINEER PROFILE &amp; VERIFIED NETWORKS</text>
+    <text x="24" y="28" font-size="13" font-weight="900" letter-spacing="1.5" fill="#22d3ee" filter="url(#txtGlow)">01 · DEVELOPER PROFILE &amp; ACADEMIC STANDING</text>
     <rect x="520" y="14" width="176" height="24" rx="6" fill="#070b16" stroke="#10b981" stroke-opacity=".4" stroke-width="1"/>
     <circle cx="536" cy="26" r="4" fill="#10b981"><animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/></circle>
     <text x="548" y="30" font-size="11" font-weight="800" letter-spacing="1" fill="#34d399">AVAILABLE FOR HIRE</text>
     
     <line x1="24" y1="46" x2="692" y2="46" stroke="rgba(255,255,255,0.08)"/>
 
-    <!-- Section 1: Identity & MSU Baroda Details (Bigger font: 15-18px) -->
+    <!-- Section 1: Identity & Combined Education Details -->
     <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.3s" fill="freeze"/>
       <text x="24" y="78" font-size="15" font-weight="700" fill="#67e8f9">Subject</text>
       <text x="180" y="78" font-size="18" font-weight="900" fill="#ffffff">Dhruvil Dattani</text>
@@ -276,12 +282,12 @@ def build_perfect_4phase_terminal():
 
     <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.60s" fill="freeze"/>
       <text x="24" y="154" font-size="15" font-weight="700" fill="#67e8f9">Education</text>
-      <text x="180" y="154" font-size="15.5" font-weight="700" fill="#e2e8f0">B.E. Computer Science &amp; Engineering</text>
+      <text x="180" y="154" font-size="15.5" font-weight="800" fill="#34d399">B.E. CSE @ MSU Baroda · 8.43 CGPA (3rd Year)</text>
     </g>
 
     <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.75s" fill="freeze"/>
-      <text x="24" y="192" font-size="15" font-weight="700" fill="#67e8f9">University</text>
-      <text x="180" y="192" font-size="15.5" font-weight="700" fill="#a78bfa">MSU Baroda (Currently in 3rd Year)</text>
+      <text x="24" y="192" font-size="15" font-weight="700" fill="#67e8f9">CORE_FOCUS</text>
+      <text x="180" y="192" font-size="15" font-weight="800" fill="#22d3ee">LLM Agentic Workflows · Computer Vision · Scalable Web</text>
     </g>
 
     <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.90s" fill="freeze"/>
@@ -290,49 +296,88 @@ def build_perfect_4phase_terminal():
     </g>
 
     <!-- Hairline Divider -->
-    <line x1="24" y1="258" x2="692" y2="258" stroke="rgba(255,255,255,0.08)"/>
+    <line x1="24" y1="256" x2="692" y2="256" stroke="rgba(255,255,255,0.08)"/>
 
-    <!-- Section 2: Direct Interactive Links with Accurate URLs (Font size: 15.5px) -->
-    <text x="24" y="286" font-size="12.5" font-weight="900" letter-spacing="1.5" fill="#a78bfa" filter="url(#txtGlow)">02 · DIRECT VERIFIED NETWORKS &amp; LINKS</text>
+    <!-- Section 2: Achievements & Technical Capabilities -->
+    <text x="24" y="284" font-size="12.5" font-weight="900" letter-spacing="1.5" fill="#a78bfa" filter="url(#txtGlow)">02 · KEY ACHIEVEMENTS &amp; TECHNICAL CAPABILITIES</text>
 
-    <!-- Portfolio Link -->
+    <!-- State Merit -->
     <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.1s" fill="freeze"/>
-      <text x="24" y="322" font-size="15" font-weight="700" fill="#67e8f9">Portfolio</text>
-      <a href="https://dhruvildattani-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">
-        <text x="180" y="322" font-size="15.5" font-weight="700" fill="#22d3ee" style="cursor:pointer;">dhruvildattani-portfolio.vercel.app &#x2197;</text>
-      </a>
+      <text x="24" y="320" font-size="15" font-weight="700" fill="#67e8f9">State Merit</text>
+      <text x="180" y="320" font-size="15" font-weight="800" fill="#e2e8f0">Gujarat State Rank 90 in DDCET (Diploma to Degree)</text>
     </g>
 
-    <!-- LinkedIn Link -->
+    <!-- Hackathons & Contests -->
     <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.25s" fill="freeze"/>
-      <text x="24" y="362" font-size="15" font-weight="700" fill="#67e8f9">LinkedIn</text>
-      <a href="https://www.linkedin.com/in/dhruvil-dattani-b43599317/" target="_blank" rel="noopener noreferrer">
-        <text x="180" y="362" font-size="15.5" font-weight="700" fill="#c084fc" style="cursor:pointer;">linkedin.com/in/dhruvil-dattani-b43599317/ &#x2197;</text>
-      </a>
+      <text x="24" y="358" font-size="15" font-weight="700" fill="#67e8f9">Contests</text>
+      <text x="180" y="358" font-size="15" font-weight="700" fill="#c084fc">Selected for IIT Bombay Impact Contest · Odoo Offline Round</text>
     </g>
 
-    <!-- GitHub Link -->
+    <!-- ToolChain -->
     <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.4s" fill="freeze"/>
-      <text x="24" y="402" font-size="15" font-weight="700" fill="#67e8f9">GitHub</text>
-      <a href="https://github.com/DhruvilTech" target="_blank" rel="noopener noreferrer">
-        <text x="180" y="402" font-size="15.5" font-weight="700" fill="#f8fafc" style="cursor:pointer;">github.com/DhruvilTech &#x2197;</text>
-      </a>
+      <text x="24" y="396" font-size="15" font-weight="700" fill="#67e8f9">Toolchain</text>
+      <text x="180" y="396" font-size="15" font-weight="700" fill="#38bdf8">Groq LLM · Gemini API · YOLOv8 · FastAPI · React · Node.js</text>
     </g>
 
-    <!-- Email Link -->
+    <!-- Current Availability -->
     <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.55s" fill="freeze"/>
-      <text x="24" y="442" font-size="15" font-weight="700" fill="#67e8f9">Direct Mail</text>
-      <a href="mailto:dhruvildattani9@gmail.com">
-        <text x="180" y="442" font-size="15.5" font-weight="700" fill="#ff354f" style="cursor:pointer;">dhruvildattani9@gmail.com &#x2197;</text>
-      </a>
+      <text x="24" y="434" font-size="15" font-weight="700" fill="#67e8f9">Availability</text>
+      <text x="180" y="434" font-size="15" font-weight="800" fill="#34d399">Open to Software Engineering Internships &amp; AI Roles</text>
     </g>
 
     <!-- Bottom Status Card Pill -->
     <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.7s" fill="freeze"/>
-      <rect x="24" y="472" width="668" height="38" rx="8" fill="#070b16" stroke="#1d2d48" stroke-width="1"/>
-      <circle cx="44" cy="491" r="3.5" fill="#34d399"/>
-      <text x="58" y="495" font-size="12.5" font-weight="700" fill="#cbd5e1">B.E. CSE MSU Baroda (3rd Year) &#183; Open for Opportunities &amp; AI Collaborations</text>
+      <rect x="24" y="466" width="668" height="42" rx="10" fill="#070b16" stroke="#1d2d48" stroke-width="1.2"/>
+      <circle cx="46" cy="487" r="4" fill="#34d399"/>
+      <text x="62" y="491" font-size="13" font-weight="700" fill="#e2e8f0">B.E. CSE @ MSU Baroda · 8.43 CGPA · Gujarat State Rank 90</text>
     </g>
+  </g>
+
+  <!-- INTEGRATED BOTTOM FOCUS & MISSION STATUS RIBBON (Full Width Tagline Dock) -->
+  <g transform="translate(24, 572)">
+    <rect width="1152" height="54" rx="14" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
+    <rect width="1152" height="2.5" rx="1" fill="url(#barGradCyan)"/>
+
+    <!-- Left Focus Chip -->
+    <rect x="16" y="11" width="96" height="32" rx="8" fill="#070b16" stroke="#22d3ee" stroke-opacity=".5" stroke-width="1.2"/>
+    <circle cx="32" cy="27" r="4" fill="#22d3ee">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="46" y="31.5" fill="#22d3ee" font-size="11.5" font-weight="900" letter-spacing="1.5">FOCUS</text>
+
+    <!-- Dynamic Cycling Focus Headlines -->
+    <g font-size="13.5" font-weight="800">
+      <!-- Phrase 1 -->
+      <text x="135" y="33" fill="url(#tagGrad)" filter="url(#tagTextGlow)">
+        Agentic AI Systems Engineer · Building Autonomous LLM Workflows
+        <animate attributeName="opacity" dur="9s" repeatCount="indefinite"
+                 keyTimes="0; 0.28; 0.33; 0.95; 1"
+                 values="1; 1; 0; 0; 1"/>
+      </text>
+
+      <!-- Phrase 2 -->
+      <text x="135" y="33" fill="url(#tagGrad)" filter="url(#tagTextGlow)">
+        Computer Vision (YOLOv8) · Real-Time Inferences · Full-Stack Web
+        <animate attributeName="opacity" dur="9s" repeatCount="indefinite"
+                 keyTimes="0; 0.28; 0.33; 0.61; 0.66; 1"
+                 values="0; 0; 1; 1; 0; 0"/>
+      </text>
+
+      <!-- Phrase 3 -->
+      <text x="135" y="33" fill="url(#tagGrad)" filter="url(#tagTextGlow)">
+        B.E. CSE @ MSU Baroda · Open to SDE &amp; AI Engineering Roles
+        <animate attributeName="opacity" dur="9s" repeatCount="indefinite"
+                 keyTimes="0; 0.61; 0.66; 0.94; 0.99; 1"
+                 values="0; 0; 1; 1; 0; 0"/>
+      </text>
+    </g>
+
+    <!-- Right Availability Chip -->
+    <rect x="1024" y="13" width="112" height="28" rx="7" fill="#070b16" stroke="#1d2d48" stroke-width="1.2"/>
+    <circle cx="1040" cy="27" r="3.5" fill="#10b981">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="1086" y="31" text-anchor="middle" font-size="10.5" font-weight="800" fill="#34d399" letter-spacing="1">AVAILABLE</text>
   </g>
 </g>
 </svg>

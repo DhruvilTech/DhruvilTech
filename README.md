@@ -21,17 +21,6 @@
        style="max-width:100%;border-radius:18px;"/>
 </picture>
 
-<br/>
-
-<!-- Dynamic Mission & Focus Typing Banner -->
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/tagline.svg">
-  <img src="assets/tagline.svg"
-       alt="Live Focus Status Banner: Full-Stack Developer (AI + Web) · Ships production AI · Open to Opportunities"
-       width="100%"
-       style="max-width:100%;margin-top:6px;border-radius:14px;"/>
-</picture>
-
 </div>
 
 <br/>
