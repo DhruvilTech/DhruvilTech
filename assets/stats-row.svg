@@ -1,20 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="140" viewBox="0 0 1180 140" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" role="img" aria-label="GitHub stats row: contributions, streak, longest streak">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" role="img" aria-label="GitHub stats row: contributions, streak, longest streak">
 <defs>
-  <linearGradient id="tileBg" x1="0%" y1="0%" x2="0%" y2="100%">
-    <stop offset="0%" stop-color="#0a1020"/>
-    <stop offset="100%" stop-color="#070b14"/>
-  </linearGradient>
   <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
     <stop offset="0%" stop-color="#22d3ee"/>
-    <stop offset="100%" stop-color="#8b5cf6"/>
+    <stop offset="100%" stop-color="#3b82f6"/>
   </linearGradient>
   <linearGradient id="coralLine" x1="0%" y1="0%" x2="100%" y2="0%">
     <stop offset="0%" stop-color="#ff3b5c"/>
     <stop offset="100%" stop-color="#fb923c"/>
   </linearGradient>
   <linearGradient id="violetLine" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" stop-color="#8b5cf6"/>
-    <stop offset="100%" stop-color="#c084fc"/>
+    <stop offset="0%" stop-color="#a78bfa"/>
+    <stop offset="100%" stop-color="#8b5cf6"/>
   </linearGradient>
   <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
     <stop offset="0%" stop-color="#ff3b5c"/>
@@ -31,35 +27,35 @@
 </defs>
 
 <!-- Card 1: Total Contributions -->
-<g transform="translate(10, 10)">
-  <rect width="370" height="120" rx="14" fill="url(#tileBg)" stroke="#1e293b" stroke-width="1.2"/>
-  <rect width="370" height="4" rx="2" fill="url(#cyanLine)"/>
-  <text x="185" y="58" text-anchor="middle" fill="#22d3ee" font-size="36" font-weight="900" filter="url(#glowCyan)">338</text>
-  <text x="185" y="84" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700">Total Contributions</text>
-  <text x="185" y="104" text-anchor="middle" fill="#64748b" font-size="10">Jun 2025 – Present · Live GitHub API</text>
+<g transform="translate(15, 10)">
+  <rect width="376" height="120" rx="14" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
+  <rect width="376" height="3" rx="1.5" fill="url(#cyanLine)"/>
+  <text x="188" y="58" text-anchor="middle" fill="#22d3ee" font-size="36" font-weight="900" filter="url(#glowCyan)">321</text>
+  <text x="188" y="84" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700">Total Contributions</text>
+  <text x="188" y="104" text-anchor="middle" fill="#64748b" font-size="10">Jun 2025 – Present · Live GitHub API</text>
 </g>
 
 <!-- Card 2: Current Streak -->
-<g transform="translate(405, 10)">
-  <rect width="370" height="120" rx="14" fill="url(#tileBg)" stroke="#1e293b" stroke-width="1.2"/>
-  <rect width="370" height="4" rx="2" fill="url(#coralLine)"/>
-  <g transform="translate(185, 48)">
+<g transform="translate(412, 10)">
+  <rect width="376" height="120" rx="14" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
+  <rect width="376" height="3" rx="1.5" fill="url(#coralLine)"/>
+  <g transform="translate(188, 48)">
     <circle cx="0" cy="0" r="26" fill="none" stroke="rgba(255,59,92,0.2)" stroke-width="3"/>
     <circle cx="0" cy="0" r="26" fill="none" stroke="url(#flameGrad)" stroke-width="3" stroke-dasharray="163" stroke-dashoffset="60">
       <animate attributeName="stroke-dashoffset" values="60;35;60" dur="2.5s" repeatCount="indefinite"/>
     </circle>
     <text x="0" y="7" text-anchor="middle" font-size="20">🔥</text>
   </g>
-  <text x="185" y="92" text-anchor="middle" fill="#ff3b5c" font-size="13" font-weight="800">6 Day Current Streak</text>
-  <text x="185" y="108" text-anchor="middle" fill="#64748b" font-size="10">Active Streak · Daily Shipping</text>
+  <text x="188" y="92" text-anchor="middle" fill="#ff3b5c" font-size="13" font-weight="800">6 Day Current Streak</text>
+  <text x="188" y="108" text-anchor="middle" fill="#64748b" font-size="10">Active Streak · Daily Shipping</text>
 </g>
 
 <!-- Card 3: Longest Streak -->
-<g transform="translate(800, 10)">
-  <rect width="370" height="120" rx="14" fill="url(#tileBg)" stroke="#1e293b" stroke-width="1.2"/>
-  <rect width="370" height="4" rx="2" fill="url(#violetLine)"/>
-  <text x="185" y="58" text-anchor="middle" fill="#a78bfa" font-size="36" font-weight="900" filter="url(#glowViolet)">7 Days</text>
-  <text x="185" y="84" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700">Longest Streak</text>
-  <text x="185" y="104" text-anchor="middle" fill="#64748b" font-size="10">Personal Record · Consistent Builder 🏆</text>
+<g transform="translate(809, 10)">
+  <rect width="376" height="120" rx="14" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
+  <rect width="376" height="3" rx="1.5" fill="url(#violetLine)"/>
+  <text x="188" y="58" text-anchor="middle" fill="#a78bfa" font-size="36" font-weight="900" filter="url(#glowViolet)">7 Days</text>
+  <text x="188" y="84" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700">Longest Streak</text>
+  <text x="188" y="104" text-anchor="middle" fill="#64748b" font-size="10">Personal Record · Consistent Builder 🏆</text>
 </g>
 </svg>

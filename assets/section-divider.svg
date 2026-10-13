@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="1200" height="24" role="img" aria-label="Animated section divider">
+  <defs>
+    <linearGradient id="divHairline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#247bff" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#247bff" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.5"/>
+      <stop offset="85%" stop-color="#ff354f" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ff354f" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="divBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#22d3ee" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#a78bfa" stop-opacity="1"/>
+      <stop offset="70%" stop-color="#ff354f" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ff354f" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="divGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="particleGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base guide line -->
+  <line x1="40" y1="12" x2="1160" y2="12" stroke="url(#divHairline)" stroke-width="1"/>
+
+  <!-- Glowing gradient center beam -->
+  <line x1="180" y1="12" x2="1020" y2="12" stroke="url(#divBeam)" stroke-width="1.8" filter="url(#divGlow)"/>
+
+  <!-- Left-to-Right traveling cyan photon particle -->
+  <circle cy="12" r="3.5" fill="#22d3ee" filter="url(#particleGlow)">
+    <animate attributeName="cx" values="120;1080;120" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Right-to-Left traveling violet photon particle -->
+  <circle cy="12" r="3" fill="#ff354f" filter="url(#particleGlow)">
+    <animate attributeName="cx" values="1080;120;1080" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Wing accents flanking the center emblem -->
+  <line x1="530" y1="12" x2="580" y2="12" stroke="#22d3ee" stroke-width="2" filter="url(#divGlow)"/>
+  <line x1="620" y1="12" x2="670" y2="12" stroke="#ff354f" stroke-width="2" filter="url(#divGlow)"/>
+
+  <!-- Center HUD Diamond Emblem -->
+  <polygon points="600,4 608,12 600,20 592,12" fill="#070b16" stroke="#a78bfa" stroke-width="1.6" filter="url(#divGlow)"/>
+  <circle cx="600" cy="12" r="2.5" fill="#22d3ee"/>
+
+  <!-- Radiating pulse ring from center emblem -->
+  <circle cx="600" cy="12" r="6" fill="none" stroke="#22d3ee" opacity="0.6">
+    <animate attributeName="r" values="3;12;3" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0;0.8" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+</svg>

@@ -217,77 +217,131 @@ def build_perfect_4phase_terminal():
     particles_body = "\n".join(uses_list)
     print(f"Generated {len(uses_list)} particle elements!")
 
-    header = '''<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" role="img" aria-label="Dhruvil Dattani — profile.sh --live">
+    header = '''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="570" viewBox="0 0 1200 570" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" role="img" aria-label="Dhruvil Dattani — Developer Profile">
 <defs>
-<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7C3AED"><animate attributeName="stop-color" values="#7C3AED;#22D3EE;#10B981;#7C3AED" dur="10s" repeatCount="indefinite"/></stop>
-      <stop offset="0.5" stop-color="#22D3EE"><animate attributeName="stop-color" values="#22D3EE;#10B981;#7C3AED;#22D3EE" dur="10s" repeatCount="indefinite"/></stop>
-      <stop offset="1" stop-color="#10B981"><animate attributeName="stop-color" values="#10B981;#7C3AED;#22D3EE;#10B981" dur="10s" repeatCount="indefinite"/></stop>
-    </linearGradient>
-<linearGradient id="asciiGrad" x1="0" y1="0" x2="0" y2="520" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#60A5FA"/>
-      <stop offset="0.45" stop-color="#A78BFA"/>
-      <stop offset="1" stop-color="#22D3EE"/>
-      <animateTransform attributeName="gradientTransform" type="translate" values="0 -120; 0 120; 0 -120" dur="9s" repeatCount="indefinite"/>
-    </linearGradient>
-<linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A101F"/><stop offset="1" stop-color="#0C1426"/></linearGradient>
-<filter id="glow8" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="8"/></filter>
-<filter id="glow3" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3"/></filter>
-<filter id="txtGlow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="0.9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-<clipPath id="winClip"><rect x="2" y="2" width="1176" height="606" rx="18"/></clipPath>
-<rect id="tvdark" width="1.6" height="1.3" rx="0.4" fill="#A78BFA"/>
+  <linearGradient id="stack-hairline"><stop stop-color="#247bff" stop-opacity=".7"/><stop offset=".5" stop-color="#567394" stop-opacity=".25"/><stop offset="1" stop-color="#ff354f" stop-opacity=".65"/></linearGradient>
+  <pattern id="stack-dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="#99b1db" opacity=".13"/></pattern>
+  <linearGradient id="barGradCyan" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#22d3ee"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient>
+  <linearGradient id="barGradViolet" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#ec4899"/></linearGradient>
+  <linearGradient id="barGradEmerald" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#34d399"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient>
+  <filter id="txtGlow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="0.9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="glow3" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3"/></filter>
+  <clipPath id="winClip"><rect x="1" y="1" width="1198" height="568" rx="22"/></clipPath>
+  <rect id="tvdark" width="1.6" height="1.3" rx="0.4" fill="#a78bfa"/>
 </defs>
-<rect x="2" y="2" width="1176" height="606" rx="18" fill="#070B16"/>
+<rect x="1" y="1" width="1198" height="568" rx="22" fill="#070b16" stroke="url(#stack-hairline)" stroke-width="1.2"/>
+<rect x="2" y="2" width="1196" height="566" rx="21" fill="url(#stack-dots)" stroke="none"/>
+<rect x="1" y="1" width="1198" height="3" rx="1.5" fill="url(#barGradCyan)"/>
 <g clip-path="url(#winClip)">
-<rect x="2" y="2" width="1176" height="606" fill="url(#panelGrad)"/>
-<rect x="2" y="2" width="1176" height="46" fill="#0B1222"/>
-<line x1="2" y1="48" x2="1178" y2="48" stroke="rgba(255,255,255,0.10)"/>
-<circle cx="30" cy="25.0" r="5.5" fill="#ff5f56"/>
-<circle cx="50" cy="25.0" r="5.5" fill="#ffbd2e"/>
-<circle cx="70" cy="25.0" r="5.5" fill="#27c93f"/>
-<text x="590.0" y="29.0" text-anchor="middle" font-size="12" fill="#94A3B8">dhruvildattani9@gmail.com - % ./profile.sh --live</text>
-<text x="38" y="74" font-size="10" letter-spacing="3" fill="#475569">VISUAL.MAP</text>
-<rect x="36" y="84" width="400" height="492" rx="10" fill="none" stroke="#22D3EE" stroke-width="2" opacity="0.45" filter="url(#glow3)"/>
-<rect x="36" y="84" width="400" height="492" rx="10" fill="#0A101F" stroke="rgba(34,211,238,0.35)"/>
-<g transform="translate(50,86) scale(1.2400,1.4471)">
+  <!-- LEFT: 5-PHASE HALFTONE PORTRAIT & LOGO MORPH -->
+  <rect x="24" y="20" width="418" height="528" rx="16" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
+  <rect x="24" y="20" width="418" height="3" rx="1.5" fill="url(#barGradCyan)"/>
+  <rect x="38" y="32" width="116" height="24" rx="6" fill="#070b16" stroke="#22d3ee" stroke-opacity=".4" stroke-width="1"/>
+  <text x="96" y="48" text-anchor="middle" font-size="11" font-weight="900" letter-spacing="2" fill="#22d3ee">VISUAL.MAP</text>
+  <circle cx="420" cy="44" r="4" fill="#10b981"><animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/></circle>
+  <text x="408" y="48" text-anchor="end" font-size="10.5" font-weight="700" letter-spacing="1" fill="#10b981">LIVE 5-PHASE</text>
+
+  <rect x="34" y="66" width="398" height="470" rx="10" fill="#070b16" stroke="#1d2d48" stroke-width="1"/>
+  <rect x="34" y="66" width="398" height="470" rx="10" fill="url(#stack-dots)" opacity="0.08"/>
+  <g transform="translate(48, 56) scale(1.2400, 1.4471)">
 '''
 
-    particles_footer = '''</g>
-<path d="M 50 84 L 36 84 L 36 98" fill="none" stroke="#22D3EE" stroke-width="2" opacity="0.8"/>
-<path d="M 422 84 L 436 84 L 436 98" fill="none" stroke="#22D3EE" stroke-width="2" opacity="0.8"/>
-<path d="M 50 576 L 36 576 L 36 562" fill="none" stroke="#22D3EE" stroke-width="2" opacity="0.8"/>
-<path d="M 422 576 L 436 576 L 436 562" fill="none" stroke="#22D3EE" stroke-width="2" opacity="0.8"/>
-<text x="470" y="106" font-size="13" letter-spacing="2" fill="#22D3EE" filter="url(#txtGlow)">SYSTEM.INFO</text>
-<line x1="566" y1="102" x2="1061" y2="102" stroke="rgba(255,255,255,0.10)"/>
-<text x="1125" y="106" text-anchor="end" font-size="12" fill="#F87171" font-weight="700"><tspan>&#9679;</tspan> LIVE</text>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.6s" fill="freeze"/>
-<rect x="470" y="122" width="245" height="20" rx="4" fill="#4C1D95"/>
-<text x="479" y="136" font-size="14" font-weight="700" fill="#E9D5FF">dhruvildattani9@gmail.com</text>
-<line x1="725" y1="130" x2="1125" y2="130" stroke="rgba(255,255,255,0.10)"/>
+    particles_footer = '''  </g>
+  <path d="M 48 80 L 38 80 L 38 90" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.85"/>
+  <path d="M 418 80 L 428 80 L 428 90" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.85"/>
+  <path d="M 48 522 L 38 522 L 38 512" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.85"/>
+  <path d="M 418 522 L 428 522 L 428 512" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.85"/>
+
+  <!-- RIGHT PANEL 1: SYSTEM.INFO -->
+  <g transform="translate(460, 20)">
+    <rect width="716" height="216" rx="16" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
+    <rect width="716" height="3" rx="1.5" fill="url(#barGradCyan)"/>
+    <text x="20" y="24" font-size="12" font-weight="900" letter-spacing="1.5" fill="#22d3ee" filter="url(#txtGlow)">01 · SYSTEM.INFO</text>
+    <rect x="160" y="11" width="224" height="20" rx="4" fill="#4c1d95"/>
+    <text x="272" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="#e9d5ff">dhruvildattani9@gmail.com</text>
+    <circle cx="690" cy="21" r="4" fill="#ef4444"><animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite"/></circle>
+    <text x="700" y="25" font-size="11" font-weight="700" fill="#ef4444">LIVE</text>
+    <line x1="20" y1="38" x2="696" y2="38" stroke="rgba(255,255,255,0.08)"/>
+
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.3s" fill="freeze"/>
+      <text x="20" y="60" font-size="12.5" font-weight="700" fill="#67e8f9">Subject</text>
+      <text x="140" y="60" font-size="12.5" font-weight="800" fill="#f8fafc">Dhruvil Dattani</text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.45s" fill="freeze"/>
+      <text x="20" y="86" font-size="12.5" font-weight="700" fill="#67e8f9">Role ...</text>
+      <text x="140" y="86" font-size="12.5" font-weight="800" fill="#f8fafc">Full Stack &amp; AI Systems Engineer</text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.60s" fill="freeze"/>
+      <text x="20" y="112" font-size="12.5" font-weight="700" fill="#67e8f9">Origin .</text>
+      <text x="140" y="112" font-size="12.5" fill="#94a3b8">Gujarat, India</text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.75s" fill="freeze"/>
+      <text x="20" y="138" font-size="12.5" font-weight="700" fill="#67e8f9">Education</text>
+      <text x="140" y="138" font-size="12.5" fill="#94a3b8">B.Tech Computer Science &amp; Engineering</text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.90s" fill="freeze"/>
+      <text x="20" y="164" font-size="12.5" font-weight="700" fill="#67e8f9">Status .</text>
+      <text x="140" y="164" font-size="12.5" font-weight="800" fill="#34d399">Open for Opportunities &amp; AI Projects</text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.05s" fill="freeze"/>
+      <text x="20" y="190" font-size="12.5" font-weight="700" fill="#67e8f9">ToolChain</text>
+      <text x="140" y="190" font-size="12.5" fill="#cbd5e1">Next.js &#183; React &#183; Node.js &#183; Python &#183; TypeScript</text>
+    </g>
+  </g>
+
+  <!-- RIGHT PANEL 2: CORE ARCHITECTURE & RADAR -->
+  <g transform="translate(460, 250)">
+    <rect width="716" height="152" rx="16" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
+    <rect width="716" height="3" rx="1.5" fill="url(#barGradViolet)"/>
+    <text x="20" y="24" font-size="12" font-weight="900" letter-spacing="1.5" fill="#a78bfa" filter="url(#txtGlow)">02 · CORE ARCHITECTURE &amp; RADAR</text>
+    <line x1="20" y1="36" x2="696" y2="36" stroke="rgba(255,255,255,0.08)"/>
+
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.20s" fill="freeze"/>
+      <text x="20" y="56" font-size="12" font-weight="700" fill="#22d3ee">Core.Languages</text>
+      <text x="160" y="56" font-size="12" fill="#e2e8f0">TypeScript &#183; Python &#183; JavaScript &#183; Go &#183; C++</text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.35s" fill="freeze"/>
+      <text x="20" y="78" font-size="12" font-weight="700" fill="#22d3ee">Core.Frontend</text>
+      <text x="160" y="78" font-size="12" fill="#cbd5e1">Next.js 14 &#183; React &#183; Tailwind CSS &#183; Redux</text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.50s" fill="freeze"/>
+      <text x="20" y="100" font-size="12" font-weight="700" fill="#22d3ee">Core.Backend</text>
+      <text x="160" y="100" font-size="12" fill="#cbd5e1">Node.js &#183; Express &#183; FastAPI &#183; Django</text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.65s" fill="freeze"/>
+      <text x="20" y="122" font-size="12" font-weight="700" fill="#22d3ee">Core.Database</text>
+      <text x="160" y="122" font-size="12" fill="#cbd5e1">PostgreSQL &#183; MongoDB &#183; Redis &#183; Supabase</text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.80s" fill="freeze"/>
+      <text x="20" y="144" font-size="12" font-weight="700" fill="#22d3ee">Core.Cloud/AI</text>
+      <text x="160" y="144" font-size="12" fill="#cbd5e1">Docker &#183; AWS &#183; LangChain &#183; OpenAI &#183; Git</text>
+    </g>
+  </g>
+
+  <!-- RIGHT PANEL 3: NETWORKS & TELEMETRY -->
+  <g transform="translate(460, 416)">
+    <rect width="716" height="132" rx="16" fill="#0d182c" stroke="#1d2d48" stroke-width="1.2"/>
+    <rect width="716" height="3" rx="1.5" fill="url(#barGradEmerald)"/>
+    <text x="20" y="23" font-size="12" font-weight="900" letter-spacing="1.5" fill="#34d399" filter="url(#txtGlow)">03 · NETWORKS &amp; TELEMETRY</text>
+    <line x1="20" y1="34" x2="696" y2="34" stroke="rgba(255,255,255,0.08)"/>
+
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.95s" fill="freeze"/>
+      <text x="20" y="53" font-size="12" font-weight="700" fill="#67e8f9">Grid.Mail ....</text><text x="140" y="53" font-size="12" fill="#cbd5e1">dhruvildattani9@gmail.com</text>
+      <text x="370" y="53" font-size="12" font-weight="700" fill="#67e8f9">Grid.GitHub ..</text><text x="490" y="53" font-size="12" fill="#cbd5e1">github.com/DhruvilTech</text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.10s" fill="freeze"/>
+      <text x="20" y="74" font-size="12" font-weight="700" fill="#67e8f9">Grid.LinkedIn</text><text x="140" y="74" font-size="12" fill="#cbd5e1">linkedin.com/in/dhruvildattani</text>
+      <text x="370" y="74" font-size="12" font-weight="700" fill="#67e8f9">Grid.Portfolio</text><text x="490" y="74" font-size="12" fill="#cbd5e1">dhruviltech.dev</text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.25s" fill="freeze"/>
+      <text x="20" y="95" font-size="12" font-weight="700" fill="#67e8f9">Grid.Status ..</text>
+      <text x="140" y="95" font-size="12" font-weight="800" fill="#34d399">&#9679; Available for hire &amp; collaborations</text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.45s" fill="freeze"/>
+      <text x="20" y="117" font-size="11.5" fill="#94a3b8">&#9656; More about me &amp; projects below in README</text>
+    </g>
+  </g>
 </g>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.90s" fill="freeze"/><text x="470" y="165" font-size="13" fill="#67E8F9">Subject</text><text x="590" y="165" font-size="13" fill="#E2E8F0">Dhruvil Dattani</text></g>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.02s" fill="freeze"/><text x="470" y="185" font-size="13" fill="#67E8F9">Role ...</text><text x="590" y="185" font-size="13" fill="#F8FAFC" font-weight="700">Full Stack &amp; AI Systems Engineer</text></g>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.14s" fill="freeze"/><text x="470" y="205" font-size="13" fill="#67E8F9">Origin .</text><text x="590" y="205" font-size="13" fill="#94A3B8">Gujarat, India</text></g>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.26s" fill="freeze"/><text x="470" y="225" font-size="13" fill="#67E8F9">Education</text><text x="590" y="225" font-size="13" fill="#94A3B8">B.Tech Computer Science &amp; Engineering</text></g>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.38s" fill="freeze"/><text x="470" y="245" font-size="13" fill="#67E8F9">Status .</text><text x="590" y="245" font-size="13" fill="#34D399" font-weight="700">Open for Opportunities &amp; AI Projects</text></g>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.50s" fill="freeze"/><text x="470" y="265" font-size="13" fill="#67E8F9">ToolChain</text><text x="590" y="265" font-size="13" fill="#CBD5E1">Next.js &#183; React &#183; Node.js &#183; Python &#183; TypeScript</text></g>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.72s" fill="freeze"/><text x="470" y="295" font-size="13" fill="#22D3EE">Core.Languages</text><text x="615" y="295" font-size="13" fill="#E2E8F0">TypeScript &#183; Python &#183; JavaScript &#183; Go &#183; C++</text></g>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.84s" fill="freeze"/><text x="470" y="315" font-size="13" fill="#22D3EE">Core.Frontend</text><text x="615" y="315" font-size="13" fill="#CBD5E1">Next.js 14 &#183; React &#183; Tailwind CSS &#183; Redux</text></g>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.96s" fill="freeze"/><text x="470" y="335" font-size="13" fill="#22D3EE">Core.Backend</text><text x="615" y="335" font-size="13" fill="#CBD5E1">Node.js &#183; Express &#183; FastAPI &#183; Django</text></g>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.08s" fill="freeze"/><text x="470" y="355" font-size="13" fill="#22D3EE">Core.Database</text><text x="615" y="355" font-size="13" fill="#CBD5E1">PostgreSQL &#183; MongoDB &#183; Redis &#183; Supabase</text></g>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.20s" fill="freeze"/><text x="470" y="375" font-size="13" fill="#22D3EE">Core.Cloud/AI</text><text x="615" y="375" font-size="13" fill="#CBD5E1">Docker &#183; AWS &#183; LangChain &#183; OpenAI &#183; Git</text></g>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.42s" fill="freeze"/><text x="470" y="415" font-size="13" fill="#A78BFA">- Contact &amp; Networks</text></g>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.54s" fill="freeze"/><text x="470" y="435" font-size="13" fill="#67E8F9">Grid.Mail ....</text><text x="590" y="435" font-size="13" fill="#CBD5E1">dhruvildattani9@gmail.com</text></g>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.66s" fill="freeze"/><text x="470" y="455" font-size="13" fill="#67E8F9">Grid.GitHub ..</text><text x="590" y="455" font-size="13" fill="#CBD5E1">github.com/DhruvilTech</text></g>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.78s" fill="freeze"/><text x="470" y="475" font-size="13" fill="#67E8F9">Grid.LinkedIn</text><text x="590" y="475" font-size="13" fill="#CBD5E1">linkedin.com/in/dhruvildattani</text></g>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.90s" fill="freeze"/><text x="470" y="495" font-size="13" fill="#67E8F9">Grid.Portfolio</text><text x="590" y="495" font-size="13" fill="#CBD5E1">dhruviltech.dev</text></g>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="3.02s" fill="freeze"/><text x="470" y="515" font-size="13" fill="#67E8F9">Grid.Status ..</text><text x="590" y="515" font-size="13" fill="#34D399">&#9679; Available for hire &amp; collaborations</text></g>
-<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="3.34s" fill="freeze"/>
-<text x="470" y="555" font-size="13" fill="#94A3B8">&#9656; More about me &amp; projects below in README</text>
-</g>
-</g>
-<rect x="3" y="3" width="1174" height="604" rx="17" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.75" filter="url(#glow8)"/>
-<rect x="3" y="3" width="1174" height="604" rx="17" fill="none" stroke="url(#accent)" stroke-width="1.5" opacity="0.95"/>
 </svg>
 '''
 
