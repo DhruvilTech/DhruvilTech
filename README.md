@@ -374,7 +374,6 @@
   <img src="https://img.shields.io/badge/GITHUB-%40DhruvilTech-38bdf8?style=for-the-badge&logo=github&logoColor=white&labelColor=070b16" alt="GitHub"/>
 </a>
 &nbsp;
-<img src="https://profileviews.blueorbitdevs.workers.dev/?username=DhruvilTech&style=for-the-badge&color=8b5cf6&label=PROFILE+VIEWS&base=36" alt="Profile Views"/>
 
 <br/><br/>
 
